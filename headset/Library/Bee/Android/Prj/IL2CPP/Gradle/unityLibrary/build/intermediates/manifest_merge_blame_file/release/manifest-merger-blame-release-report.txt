@@ -1,0 +1,215 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player"
+5    android:installLocation="auto"
+6    android:versionCode="1"
+7    android:versionName="0.1.5" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="23"
+10-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+11        android:targetSdkVersion="29" />
+11-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+12
+13    <uses-feature android:glEsVersion="0x00030000" />
+13-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-52
+13-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-49
+14    <uses-feature
+14-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-91
+15        android:name="android.hardware.vulkan.version"
+15-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:17-63
+16        android:required="false" />
+16-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:64-88
+17
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-65
+18-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:20-62
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-69
+19-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:20-66
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-78
+20-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:20-75
+21
+22    <uses-feature
+22-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:3-87
+23        android:name="android.hardware.microphone"
+23-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:17-59
+24        android:required="false" />
+24-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:60-84
+25    <uses-feature
+25-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:3-88
+26        android:name="android.hardware.touchscreen"
+26-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:17-60
+27        android:required="false" />
+27-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:61-85
+28    <uses-feature
+28-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:33:3-99
+29        android:name="android.hardware.touchscreen.multitouch"
+29-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:33:17-71
+30        android:required="false" />
+30-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:33:72-96
+31    <uses-feature
+31-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:3-108
+32        android:name="android.hardware.touchscreen.multitouch.distinct"
+32-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:17-80
+33        android:required="false" />
+33-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:81-105
+34    <uses-feature
+34-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:3-111
+35        android:name="android.hardware.vr.headtracking"
+35-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:17-64
+36        android:required="true"
+36-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:85-108
+37        android:version="1" />
+37-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:65-84
+38    <uses-feature
+38-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:36:3-88
+39        android:name="oculus.software.handtracking"
+39-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:36:17-60
+40        android:required="false" />
+40-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:36:61-85
+41
+42    <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+42-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:37:3-73
+42-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:37:20-70
+43
+44    <uses-feature
+44-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:38:3-89
+45        android:name="com.oculus.feature.PASSTHROUGH"
+45-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:38:17-62
+46        android:required="true" />
+46-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:38:63-86
+47
+48    <application
+48-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-25:17
+49        android:allowBackup="false"
+49-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:114-141
+50        android:extractNativeLibs="true"
+50-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+51        android:icon="@mipmap/app_icon"
+51-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:82-113
+52        android:label="@string/app_name"
+52-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:49-81
+53        android:networkSecurityConfig="@xml/network_sec_config" >
+53-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:142-197
+54        <activity
+54-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-13:16
+55            android:name="com.unity3d.player.UnityPlayerActivity"
+55-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+56            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode"
+56-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:204-305
+57            android:hardwareAccelerated="false"
+57-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:341-376
+58            android:launchMode="singleTask"
+58-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:172-203
+59            android:resizeableActivity="false"
+59-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:306-340
+60            android:screenOrientation="landscape"
+60-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:134-171
+61            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+61-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-133
+62            <intent-filter>
+62-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-9:23
+63                <action android:name="android.intent.action.MAIN" />
+63-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+63-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+65-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+66                <category android:name="com.oculus.intent.category.VR" />
+66-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:9-66
+66-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:19-63
+67            </intent-filter>
+68
+69            <meta-data
+69-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-82
+70                android:name="unityplayer.UnityActivity"
+70-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-58
+71                android:value="true" />
+71-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:59-79
+72            <meta-data
+72-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:7-78
+73                android:name="android.notch_support"
+73-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:18-54
+74                android:value="true" />
+74-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:55-75
+75            <meta-data
+75-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:7-81
+76                android:name="com.oculus.vr.focusaware"
+76-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:18-57
+77                android:value="true" />
+77-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:58-78
+78        </activity>
+79
+80        <meta-data
+80-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-69
+81            android:name="unity.splash-mode"
+81-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-48
+82            android:value="0" />
+82-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:49-66
+83        <meta-data
+83-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-74
+84            android:name="unity.splash-enable"
+84-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-50
+85            android:value="True" />
+85-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:51-71
+86        <meta-data
+86-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-78
+87            android:name="unity.launch-fullscreen"
+87-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-54
+88            android:value="True" />
+88-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:55-75
+89        <meta-data
+89-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-84
+90            android:name="unity.allow-resizable-window"
+90-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-59
+91            android:value="False" />
+91-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:60-81
+92        <meta-data
+92-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-81
+93            android:name="notch.config"
+93-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-43
+94            android:value="portrait|landscape" />
+94-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:44-78
+95        <meta-data
+95-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-87
+96            android:name="com.oculus.handtracking.frequency"
+96-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:16-64
+97            android:value="LOW" />
+97-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:65-84
+98        <meta-data
+98-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:5-97
+99            android:name="com.samsung.android.vr.application.mode"
+99-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:16-70
+100            android:value="vr_only" />
+100-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:71-94
+101        <meta-data
+101-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:5-91
+102            android:name="com.unity.xr.oculus.LowOverheadMode"
+102-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:16-66
+103            android:value="false" />
+103-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:67-88
+104        <meta-data
+104-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:5-88
+105            android:name="com.unity.xr.oculus.LateLatching"
+105-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:16-63
+106            android:value="false" />
+106-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:64-85
+107        <meta-data
+107-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:5-93
+108            android:name="com.unity.xr.oculus.LateLatchingDebug"
+108-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:16-68
+109            android:value="false" />
+109-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:69-90
+110        <meta-data
+110-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:5-90
+111            android:name="com.oculus.supportedDevices"
+111-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:16-58
+112            android:value="quest|quest2" />
+112-->D:\AR_Project\Controller_Test\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:59-87
+113    </application>
+114
+115</manifest>
