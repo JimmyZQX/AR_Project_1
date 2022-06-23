@@ -2,20 +2,68 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - OSC_Receiver
+    Oculus.Interaction.dll:
+    - Oculus.Interaction.ActiveStateGroup
+    - Oculus.Interaction.ActiveStateTracker
+    - Oculus.Interaction.ControllerActiveState
+    - Oculus.Interaction.ControllerOffset
+    - Oculus.Interaction.ControllerPointerPose
+    - Oculus.Interaction.ControllerRayVisual
+    - Oculus.Interaction.ControllerSelector
+    - Oculus.Interaction.GrabAPI.HandGrabAPI
+    - Oculus.Interaction.GrabInteractable
+    - Oculus.Interaction.GrabInteractor
+    - Oculus.Interaction.Grabbable
+    - Oculus.Interaction.HandActiveState
+    - Oculus.Interaction.HandPinchOffset
+    - Oculus.Interaction.HandPointerPose
+    - Oculus.Interaction.HandPosing.HandGrabInteractable
+    - Oculus.Interaction.HandPosing.HandGrabInteractor
+    - Oculus.Interaction.HandRayInteractorCursorVisual
+    - Oculus.Interaction.HandTransformScaler
+    - Oculus.Interaction.HandVisual
+    - Oculus.Interaction.HandWristOffset
+    - Oculus.Interaction.IndexPinchSelector
+    - Oculus.Interaction.Input.AnimatedHandOVR
+    - Oculus.Interaction.Input.Controller
+    - Oculus.Interaction.Input.ControllerRef
+    - Oculus.Interaction.Input.FromOVRControllerDataSource
+    - Oculus.Interaction.Input.FromOVRControllerHandDataSource
+    - Oculus.Interaction.Input.FromOVRHandDataSource
+    - Oculus.Interaction.Input.FromOVRHmdDataSource
+    - Oculus.Interaction.Input.Hand
+    - Oculus.Interaction.Input.HandPhysicsCapsules
+    - Oculus.Interaction.Input.HandRef
+    - Oculus.Interaction.Input.HandSkeletonOVR
+    - Oculus.Interaction.Input.Hmd
+    - Oculus.Interaction.Input.LastKnownGoodHand
+    - Oculus.Interaction.Input.OVRCameraRigRef
+    - Oculus.Interaction.Input.SyntheticHand
+    - Oculus.Interaction.Input.TrackingToWorldTransformerOVR
+    - Oculus.Interaction.InteractionOVRCameraRig
+    - Oculus.Interaction.InteractorActiveState
+    - Oculus.Interaction.InteractorDebugVisual
+    - Oculus.Interaction.InteractorGroup
+    - Oculus.Interaction.MaterialPropertyBlockEditor
+    - Oculus.Interaction.PoseDetection.FingerFeatureStateProvider
+    - Oculus.Interaction.PoseDetection.FingerFeatureStateThresholds
+    - Oculus.Interaction.PoseDetection.JointDeltaProvider
+    - Oculus.Interaction.PoseDetection.TransformFeatureStateProvider
+    - Oculus.Interaction.RayInteractor
+    - Oculus.Interaction.RayInteractorCursorVisual
+    - Oculus.Interaction.RayInteractorPinchVisual
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
+    - OVRControllerHelper
     - OVRHand
     - OVRHeadsetEmulator
     - OVRManager
-    - OVRMesh
-    - OVRMeshRenderer
     - OVRPassthroughLayer
     - OVRRuntimeSettings
     - OVRSkeleton
-    - OVRSkeletonRenderer
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.Management.Editor.dll:
@@ -31,6 +79,14 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   serializedClasses:
+    Oculus.Interaction:
+    - Oculus.Interaction.GrabAPI.GrabbingRule
+    - Oculus.Interaction.HandPosing.PoseMeasureParameters
+    - Oculus.Interaction.MaterialPropertyVector
+    - Oculus.Interaction.PoseDetection.FingerFeatureStateProvider/FingerStateThresholds
+    - Oculus.Interaction.PoseDetection.FingerFeatureStateThreshold
+    - Oculus.Interaction.PoseDetection.FingerFeatureThresholds
+    - Oculus.Interaction.ProgressCurve
     Oculus.VR.Editor:
     - Assets.Oculus.VR.Editor.AssetConfigList
   methodsToPreserve: []
@@ -56,12 +112,26 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2212}
+    - Class: 114
+      Script: {instanceID: 2300}
     - Class: 114
       Script: {instanceID: 2448}
     - Class: 114
@@ -69,34 +139,128 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2638}
+    - Class: 114
+      Script: {instanceID: 2722}
+    - Class: 114
+      Script: {instanceID: 2746}
+    - Class: 114
+      Script: {instanceID: 3012}
     - Class: 114
       Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3340}
+      Script: {instanceID: 3272}
     - Class: 114
-      Script: {instanceID: 4078}
+      Script: {instanceID: 3824}
     - Class: 114
-      Script: {instanceID: 5368}
+      Script: {instanceID: 4088}
+    - Class: 114
+      Script: {instanceID: 4376}
+    - Class: 114
+      Script: {instanceID: 4624}
+    - Class: 114
+      Script: {instanceID: 4722}
+    - Class: 114
+      Script: {instanceID: 4820}
+    - Class: 114
+      Script: {instanceID: 4962}
+    - Class: 114
+      Script: {instanceID: 5066}
+    - Class: 114
+      Script: {instanceID: 5268}
     - Class: 114
       Script: {instanceID: 5404}
     - Class: 114
+      Script: {instanceID: 5430}
+    - Class: 114
+      Script: {instanceID: 5830}
+    - Class: 114
+      Script: {instanceID: 5864}
+    - Class: 114
+      Script: {instanceID: 6282}
+    - Class: 114
+      Script: {instanceID: 6386}
+    - Class: 114
+      Script: {instanceID: 6560}
+    - Class: 114
+      Script: {instanceID: 6646}
+    - Class: 114
+      Script: {instanceID: 6694}
+    - Class: 114
+      Script: {instanceID: 6724}
+    - Class: 114
+      Script: {instanceID: 6736}
+    - Class: 114
+      Script: {instanceID: 6896}
+    - Class: 114
       Script: {instanceID: 6948}
+    - Class: 114
+      Script: {instanceID: 7074}
+    - Class: 114
+      Script: {instanceID: 7228}
+    - Class: 114
+      Script: {instanceID: 7268}
+    - Class: 114
+      Script: {instanceID: 7464}
+    - Class: 114
+      Script: {instanceID: 7724}
+    - Class: 114
+      Script: {instanceID: 8218}
+    - Class: 114
+      Script: {instanceID: 8346}
+    - Class: 114
+      Script: {instanceID: 8362}
+    - Class: 114
+      Script: {instanceID: 8416}
+    - Class: 114
+      Script: {instanceID: 8420}
+    - Class: 114
+      Script: {instanceID: 8432}
     - Class: 114
       Script: {instanceID: 8546}
     - Class: 114
+      Script: {instanceID: 8778}
+    - Class: 114
+      Script: {instanceID: 9148}
+    - Class: 114
+      Script: {instanceID: 9250}
+    - Class: 114
+      Script: {instanceID: 9902}
+    - Class: 114
       Script: {instanceID: 9960}
     - Class: 114
+      Script: {instanceID: 10210}
+    - Class: 114
+      Script: {instanceID: 10332}
+    - Class: 114
+      Script: {instanceID: 10376}
+    - Class: 114
+      Script: {instanceID: 10566}
+    - Class: 114
+      Script: {instanceID: 10696}
+    - Class: 114
       Script: {instanceID: 10794}
+    - Class: 114
+      Script: {instanceID: 10824}
+    - Class: 114
+      Script: {instanceID: 10908}
+    - Class: 114
+      Script: {instanceID: 10946}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 210
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -4004,4 +4168,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/AR_Project/headset_builds/0.1.5.apk
+  playerPath: D:/AR_Project_1/headset_builds/0.1.10.apk

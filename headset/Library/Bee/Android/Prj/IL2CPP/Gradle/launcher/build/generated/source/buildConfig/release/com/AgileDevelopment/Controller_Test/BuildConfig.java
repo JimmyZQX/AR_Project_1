@@ -8,5 +8,5 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.AgileDevelopment.Controller_Test";
   public static final String BUILD_TYPE = "release";
   public static final int VERSION_CODE = 1;
-  public static final String VERSION_NAME = "0.1.5";
+  public static final String VERSION_NAME = "0.1.10";
 }
