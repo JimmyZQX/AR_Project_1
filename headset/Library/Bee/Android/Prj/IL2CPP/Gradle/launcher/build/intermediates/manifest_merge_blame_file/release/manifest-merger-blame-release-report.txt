@@ -3,7 +3,7 @@
 3    package="com.AgileDevelopment.Controller_Test"
 4    android:installLocation="auto"
 5    android:versionCode="1"
-6    android:versionName="0.1.10" >
+6    android:versionName="0.1.19" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="23"

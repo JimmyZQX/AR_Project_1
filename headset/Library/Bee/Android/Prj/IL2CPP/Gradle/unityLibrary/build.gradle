@@ -23,7 +23,7 @@ android {
             abiFilters 'arm64-v8a'
         }
         versionCode 1
-        versionName '0.1.10'
+        versionName '0.1.19'
         consumerProguardFiles 'proguard-unity.txt'
     }
 
