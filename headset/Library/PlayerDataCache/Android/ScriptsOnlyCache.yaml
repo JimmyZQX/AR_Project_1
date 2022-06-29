@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Debug_Display
     - OSC_Receiver
+    - Oscillator
     Oculus.Interaction.dll:
     - Oculus.Interaction.ActiveStateGroup
     - Oculus.Interaction.ActiveStateTracker
@@ -146,6 +147,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -211,73 +214,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5520}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 5830}
     - Class: 114
-      Script: {instanceID: 5916}
+      Script: {instanceID: 5896}
     - Class: 114
-      Script: {instanceID: 6206}
+      Script: {instanceID: 5918}
     - Class: 114
-      Script: {instanceID: 6342}
+      Script: {instanceID: 6208}
     - Class: 114
-      Script: {instanceID: 6446}
+      Script: {instanceID: 6344}
     - Class: 114
-      Script: {instanceID: 6622}
+      Script: {instanceID: 6448}
     - Class: 114
-      Script: {instanceID: 6758}
+      Script: {instanceID: 6624}
     - Class: 114
-      Script: {instanceID: 6788}
+      Script: {instanceID: 6760}
     - Class: 114
-      Script: {instanceID: 6962}
+      Script: {instanceID: 6790}
     - Class: 114
-      Script: {instanceID: 6968}
+      Script: {instanceID: 6964}
     - Class: 114
-      Script: {instanceID: 7014}
+      Script: {instanceID: 6970}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 7016}
     - Class: 114
-      Script: {instanceID: 7336}
+      Script: {instanceID: 7142}
     - Class: 114
-      Script: {instanceID: 7532}
+      Script: {instanceID: 7338}
     - Class: 114
-      Script: {instanceID: 7812}
+      Script: {instanceID: 7534}
     - Class: 114
-      Script: {instanceID: 8290}
+      Script: {instanceID: 7814}
     - Class: 114
-      Script: {instanceID: 8420}
+      Script: {instanceID: 8292}
     - Class: 114
-      Script: {instanceID: 8494}
+      Script: {instanceID: 8422}
     - Class: 114
-      Script: {instanceID: 8506}
+      Script: {instanceID: 8496}
     - Class: 114
-      Script: {instanceID: 8620}
+      Script: {instanceID: 8508}
     - Class: 114
-      Script: {instanceID: 8704}
+      Script: {instanceID: 8622}
     - Class: 114
-      Script: {instanceID: 8852}
+      Script: {instanceID: 8706}
     - Class: 114
-      Script: {instanceID: 9328}
+      Script: {instanceID: 8854}
     - Class: 114
-      Script: {instanceID: 9986}
+      Script: {instanceID: 9330}
     - Class: 114
-      Script: {instanceID: 10044}
+      Script: {instanceID: 9618}
     - Class: 114
-      Script: {instanceID: 10294}
+      Script: {instanceID: 9990}
     - Class: 114
-      Script: {instanceID: 10416}
+      Script: {instanceID: 10048}
     - Class: 114
-      Script: {instanceID: 10656}
+      Script: {instanceID: 10298}
     - Class: 114
-      Script: {instanceID: 10790}
+      Script: {instanceID: 10420}
     - Class: 114
-      Script: {instanceID: 10888}
+      Script: {instanceID: 10660}
     - Class: 114
-      Script: {instanceID: 10918}
+      Script: {instanceID: 10794}
     - Class: 114
-      Script: {instanceID: 11002}
+      Script: {instanceID: 10892}
     - Class: 114
-      Script: {instanceID: 11040}
+      Script: {instanceID: 10922}
     - Class: 114
-      Script: {instanceID: 48704}
+      Script: {instanceID: 11006}
+    - Class: 114
+      Script: {instanceID: 11044}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2071,6 +2076,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 4842424d7a6f3cdf20ca033349a8c11f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Oscillator
+  - hash:
+      serializedVersion: 2
       Hash: b240bf3d9d7b5cd60653ccf864071347
     assemblyName: Facebook.WitAI.dll
     namespaceName: Facebook.WitAi.Data.Configuration
@@ -3733,6 +3744,12 @@ ScriptsOnlyBuild:
     className: OSCMultiplySliders
   - hash:
       serializedVersion: 2
+      Hash: b1b30577e44e211f4e73ab9f0062f39a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Debug_Display
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -4409,13 +4426,7 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: TrackSegment
-  - hash:
-      serializedVersion: 2
-      Hash: b1b30577e44e211f4e73ab9f0062f39a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Debug_Display
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/AR_Project_1/headset_builds/0.1.19.apk
+  playerPath: D:/AR_Project_1/headset_builds/0.1.20.apk

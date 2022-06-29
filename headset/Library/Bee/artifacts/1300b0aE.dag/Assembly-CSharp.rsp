@@ -523,6 +523,7 @@
 "Assets/Scripts/Debug_Display.cs"
 "Assets/Scripts/Oscillator.cs"
 "Assets/Scripts/OSC_Receiver.cs"
+"Assets/Scripts/Synthesizer.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
