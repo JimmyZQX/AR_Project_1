@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using extOSC;
-using static Synthesizer;
+using System;
 
 public class OSC_Receiver : MonoBehaviour
 {
 
     [SerializeField] int port = 7001;
     OSCReceiver receiver;
+    // public AudioHelm.HelmController helmController;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Local IP Address: {0}\n", GetLocalIPAddress());
+        Debug.Log("Hello!");
+        Debug.Log("Local IP Address: " + GetLocalIPAddress());
+        Debug.Log("Port: " + port);
 
         receiver = gameObject.AddComponent<OSCReceiver>();
         receiver.LocalPort = port;
@@ -21,25 +24,27 @@ public class OSC_Receiver : MonoBehaviour
     }
 
     // Function when midi message received
-    protected void MessageReceived(OSCMessage message)
+    private void MessageReceived(OSCMessage message)
     {
-        int[3] midi_message;
+        Debug.Log("Message Received " + message);
+        int on_off = message.Values[0].IntValue;
+        int note = message.Values[1].IntValue;
+        int velocity = message.Values[2].IntValue;
 
-        for (int i = 0; i < 3; i++)
-        {
-            midi_message[i] = message.Values[i].IntValue;
-        }
+        //play(note, velocity);
 
-        Synthesizer.instance.play_note(midi_message);
+        Synthesizer sn = gameObject.GetComponent<Synthesizer>();
+        // Test_Synth sn = gameObject.GetComponent<Test_Synth>();
+        sn.play_note(on_off, note, velocity);
     }
 
     // Function for getting the local IP aaddress
     string GetLocalIPAddress()
     {
-        var host = Dns.GetHostEntry(Dns.GetHostName());
+        var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
         foreach (var ip in host.AddressList)
         {
-            if (ip.AddressFamily == AddressFamily.InterNetwork)
+            if (ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
             {
                 return ip.ToString();
             }

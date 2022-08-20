@@ -115,6 +115,7 @@
 -define:PACKAGE_UITOOLKIT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Oculus/LipSync/Plugins/Sanford.Multimedia.Midi.dll"
 -r:"D:/2021.3.3f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
 -r:"D:/2021.3.3f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
 -r:"D:/2021.3.3f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll"
