@@ -9,7 +9,8 @@ print("Initialization complete")
 print(midi.get_device_info(default_id))
 
 
-server_ip = "192.168.50.163"
+#server_ip = "192.168.50.163"
+server_ip = "127.0.0.1"
 port = 7001
 
 # create client
