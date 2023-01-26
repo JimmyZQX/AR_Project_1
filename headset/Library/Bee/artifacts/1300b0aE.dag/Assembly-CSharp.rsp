@@ -119,6 +119,7 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:EXTOSC
+-define:NORMCORE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Oculus/LipSync/Plugins/Sanford.Multimedia.Midi.dll"
@@ -326,6 +327,7 @@
 -r:"D:/2021.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"D:/2021.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 -r:"D:/2021.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"D:/AR_Project_1/headset/Library/PackageCache/com.normalvr.normcore@2.4.1/2018/Runtime/UnityEditor/Normcore.dll"
 -r:"D:/AR_Project_1/headset/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"D:/AR_Project_1/headset/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"D:/AR_Project_1/headset/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
@@ -335,6 +337,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/extOSC.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Facebook.Wit.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Facebook.WitAI.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Normal.Realtime.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Normal.Realtime.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Oculus.AudioManager.Audio.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Oculus.AudioManager.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Oculus.AudioManager.Utils.Editor.ref.dll"
@@ -441,6 +445,12 @@
 "Assets/extOSC/Examples/11) Array/Scripts/ArrayExample.cs"
 "Assets/extOSC/Examples/12) Match Pattern/Scripts/MatchPatternExample.cs"
 "Assets/extOSC/Examples/13) Marshalling/Scripts/MarshallingExample.cs"
+"Assets/Normal/Examples/Blank Scene Template/Scripts/OculusSetFloorTrackingOriginWithoutPlugin.cs"
+"Assets/Normal/Examples/Cube Player/Scripts/CubePlayer.cs"
+"Assets/Normal/Examples/Cube Player/Scripts/CubePlayerManager.cs"
+"Assets/Normal/Examples/Hoverbird Player/Scripts/HoverbirdPlayer.cs"
+"Assets/Normal/Examples/Hoverbird Player/Scripts/HoverbirdPlayerManager.cs"
+"Assets/Normal/Examples/VR Player/Scripts/VoiceMouthMove.cs"
 "Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/Hand.cs"
 "Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/HandPose.cs"
 "Assets/Oculus/SampleFramework/Core/DebugUI/Scripts/DebugUIBuilder.cs"

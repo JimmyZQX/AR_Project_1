@@ -119,6 +119,7 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:EXTOSC
+-define:NORMCORE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Oculus/LipSync/Plugins/Sanford.Multimedia.Midi.dll"
@@ -337,6 +338,8 @@
 -r:"D:/2021.3.3f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll"
 -r:"D:/2021.3.3f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"D:/2021.3.3f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
+-r:"D:/AR_Project_1/headset/Library/PackageCache/com.normalvr.normcore@2.4.1/2018/Runtime/UnityEditor/Normcore.dll"
+-r:"D:/AR_Project_1/headset/Library/PackageCache/com.normalvr.normcore@2.4.1/2021/Editor/Normcore.Editor.dll"
 -r:"D:/AR_Project_1/headset/Library/PackageCache/com.unity.collab-proxy@1.15.16/Lib/Editor/PlasticSCM/log4netPlastic.dll"
 -r:"D:/AR_Project_1/headset/Library/PackageCache/com.unity.collab-proxy@1.15.16/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"D:/AR_Project_1/headset/Library/PackageCache/com.unity.collab-proxy@1.15.16/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
@@ -354,6 +357,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/extOSC.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Facebook.Wit.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Facebook.WitAI.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Normal.Realtime.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Normal.Realtime.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Oculus.AudioManager.Audio.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Oculus.AudioManager.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Oculus.AudioManager.Utils.Editor.ref.dll"
@@ -426,6 +431,8 @@
 "Assets/AudioHelm/Editor/SequencerPositionUI.cs"
 "Assets/AudioHelm/Editor/SequencerUI.cs"
 "Assets/AudioHelm/Editor/SequencerVelocityUI.cs"
+"Assets/Normal/Internal/Editor/PackageManager.cs"
+"Assets/Normal/Internal/Editor/SimpleJson.cs"
 "Assets/Oculus/SampleFramework/Core/Firebase/Editor/FirebaseEnabler.cs"
 "Assets/Oculus/SampleFramework/Core/Gradle/Editor/Utils.cs"
 "Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/Editor/TeleportTransitionWarpInspector.cs"
