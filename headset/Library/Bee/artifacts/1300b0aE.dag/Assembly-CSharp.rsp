@@ -577,6 +577,7 @@
 "Assets/Scripts/Debug_Display.cs"
 "Assets/Scripts/FM_Modular.cs"
 "Assets/Scripts/Freeze_Rotation.cs"
+"Assets/Scripts/OSCReceiverInstruments.cs"
 "Assets/Scripts/OSCReceiverPiano.cs"
 "Assets/Scripts/OSC_Receiver.cs"
 "Assets/Scripts/Piano.cs"

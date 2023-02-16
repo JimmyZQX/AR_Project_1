@@ -6373,7 +6373,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1946800348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48b3f591df338004f932dd82dc127f13, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c0e39055d1bae14e994e62e4a56ee88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   keyPrefab: {fileID: 4324761703396265895, guid: 29cc6160c47debe4b96d7c2f10f5b7b3, type: 3}
@@ -6387,7 +6387,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946800348}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 859e4f57f03a5e54a92e276e3c54afd6, type: 3}
   m_Name: 
@@ -6407,6 +6407,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1347186006}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1954591801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954591803}
+  - component: {fileID: 1954591802}
+  m_Layer: 0
+  m_Name: OSCReceiverInstruments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1954591802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954591801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fee2458654fe334289a68b3faa4e610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 7001
+  piano: {fileID: 1946800350}
+  synthesizer: {fileID: 1954838514}
+--- !u!4 &1954591803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954591801}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.16931836, y: 1.0258632, z: 2.2852986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1954838511
 GameObject:
@@ -6465,7 +6512,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954838511}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2b5eefb4a4efe489cb3245643577fa, type: 3}
   m_Name: 

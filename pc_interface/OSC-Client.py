@@ -16,6 +16,16 @@ port = 7001
 # create client
 client = SimpleUDPClient(server_ip, port)
 
+# ask user which instrument to use
+while True:
+    instrument = input("Choose your instrument: (piano / synthesizer)")
+    if instrument != "piano" and instrument != "synthesizer":
+        print("Not a valid answer. ")
+    else:
+        print("You have chosen " + instrument)
+        break
+
+
 # infinite loop to detect midi input, if detected, print
 try:
     while True:
@@ -23,7 +33,7 @@ try:
             message = midi_input.read(num_events=16)
             print(message[0][0])
             pass_message = message[0][0]
-            client.send_message("/message/address", pass_message)
+            client.send_message("/" + instrument, pass_message)
 except KeyboardInterrupt as err:
     print("Stopping...")
 
