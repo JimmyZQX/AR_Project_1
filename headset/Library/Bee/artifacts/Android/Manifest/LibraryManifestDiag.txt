@@ -7,9 +7,12 @@ android.permission.INTERNET was added because:
 		Assembly-CSharp-FeaturesChecked.txt
 		extOSC-FeaturesChecked.txt
 		Oculus.VR-FeaturesChecked.txt
+	UnityEngine.Ping was present in:
+		Normcore-FeaturesChecked.txt
 android.permission.RECORD_AUDIO, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.BLUETOOTH, android.hardware.microphone were added because:
 	UnityEngine.Microphone was present in:
 		Facebook.WitAI-FeaturesChecked.txt
+		Normal.Realtime-FeaturesChecked.txt
 		Oculus.LipSync-FeaturesChecked.txt
 android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
 	UnityEngine.Input::GetTouch was present in:

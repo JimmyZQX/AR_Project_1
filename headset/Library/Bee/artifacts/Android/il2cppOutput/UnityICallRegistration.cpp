@@ -764,6 +764,26 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Animations.AnimationLayerMixerPlayable
 
+	//Start Registrations for type : UnityEngine.Animations.ParentConstraint
+
+		//System.Int32 UnityEngine.Animations.ParentConstraint::AddSource_Injected(UnityEngine.Animations.ConstraintSource&)
+		void Register_UnityEngine_Animations_ParentConstraint_AddSource_Injected();
+		Register_UnityEngine_Animations_ParentConstraint_AddSource_Injected();
+
+		//System.Int32 UnityEngine.Animations.ParentConstraint::GetSourceCountInternal(UnityEngine.Animations.ParentConstraint)
+		void Register_UnityEngine_Animations_ParentConstraint_GetSourceCountInternal();
+		Register_UnityEngine_Animations_ParentConstraint_GetSourceCountInternal();
+
+		//System.Void UnityEngine.Animations.ParentConstraint::SetRotationOffsetInternal_Injected(System.Int32,UnityEngine.Vector3&)
+		void Register_UnityEngine_Animations_ParentConstraint_SetRotationOffsetInternal_Injected();
+		Register_UnityEngine_Animations_ParentConstraint_SetRotationOffsetInternal_Injected();
+
+		//System.Void UnityEngine.Animations.ParentConstraint::SetTranslationOffsetInternal_Injected(System.Int32,UnityEngine.Vector3&)
+		void Register_UnityEngine_Animations_ParentConstraint_SetTranslationOffsetInternal_Injected();
+		Register_UnityEngine_Animations_ParentConstraint_SetTranslationOffsetInternal_Injected();
+
+	//End Registrations for type : UnityEngine.Animations.ParentConstraint
+
 	//Start Registrations for type : UnityEngine.Animator
 
 		//System.Boolean UnityEngine.Animator::get_hasBoundPlayables()
@@ -4032,6 +4052,26 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.PhysicsScene2D
 
+	//Start Registrations for type : UnityEngine.Ping
+
+		//System.Boolean UnityEngine.Ping::Internal_IsDone()
+		void Register_UnityEngine_Ping_Internal_IsDone();
+		Register_UnityEngine_Ping_Internal_IsDone();
+
+		//System.Int32 UnityEngine.Ping::get_time()
+		void Register_UnityEngine_Ping_get_time();
+		Register_UnityEngine_Ping_get_time();
+
+		//System.IntPtr UnityEngine.Ping::Internal_Create(System.String)
+		void Register_UnityEngine_Ping_Internal_Create();
+		Register_UnityEngine_Ping_Internal_Create();
+
+		//System.Void UnityEngine.Ping::Internal_Destroy(System.IntPtr)
+		void Register_UnityEngine_Ping_Internal_Destroy();
+		Register_UnityEngine_Ping_Internal_Destroy();
+
+	//End Registrations for type : UnityEngine.Ping
+
 	//Start Registrations for type : UnityEngine.Playables.PlayableHandle
 
 		//System.Boolean UnityEngine.Playables.PlayableHandle::IsValid_Injected(UnityEngine.Playables.PlayableHandle&)
@@ -4550,6 +4590,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Rigidbody
 
+		//System.Boolean UnityEngine.Rigidbody::IsSleeping()
+		void Register_UnityEngine_Rigidbody_IsSleeping();
+		Register_UnityEngine_Rigidbody_IsSleeping();
+
 		//System.Boolean UnityEngine.Rigidbody::get_isKinematic()
 		void Register_UnityEngine_Rigidbody_get_isKinematic();
 		Register_UnityEngine_Rigidbody_get_isKinematic();
@@ -4557,6 +4601,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.Rigidbody::get_useGravity()
 		void Register_UnityEngine_Rigidbody_get_useGravity();
 		Register_UnityEngine_Rigidbody_get_useGravity();
+
+		//System.Single UnityEngine.Rigidbody::get_angularDrag()
+		void Register_UnityEngine_Rigidbody_get_angularDrag();
+		Register_UnityEngine_Rigidbody_get_angularDrag();
 
 		//System.Single UnityEngine.Rigidbody::get_drag()
 		void Register_UnityEngine_Rigidbody_get_drag();
@@ -4582,9 +4630,25 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_MoveRotation_Injected();
 		Register_UnityEngine_Rigidbody_MoveRotation_Injected();
 
+		//System.Void UnityEngine.Rigidbody::Sleep()
+		void Register_UnityEngine_Rigidbody_Sleep();
+		Register_UnityEngine_Rigidbody_Sleep();
+
+		//System.Void UnityEngine.Rigidbody::WakeUp()
+		void Register_UnityEngine_Rigidbody_WakeUp();
+		Register_UnityEngine_Rigidbody_WakeUp();
+
+		//System.Void UnityEngine.Rigidbody::get_angularVelocity_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Rigidbody_get_angularVelocity_Injected();
+		Register_UnityEngine_Rigidbody_get_angularVelocity_Injected();
+
 		//System.Void UnityEngine.Rigidbody::get_position_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_get_position_Injected();
 		Register_UnityEngine_Rigidbody_get_position_Injected();
+
+		//System.Void UnityEngine.Rigidbody::get_rotation_Injected(UnityEngine.Quaternion&)
+		void Register_UnityEngine_Rigidbody_get_rotation_Injected();
+		Register_UnityEngine_Rigidbody_get_rotation_Injected();
 
 		//System.Void UnityEngine.Rigidbody::get_velocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_get_velocity_Injected();
@@ -5897,6 +5961,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()
 		void Register_UnityEngine_XR_XRSettings_get_renderViewportScaleInternal();
 		Register_UnityEngine_XR_XRSettings_get_renderViewportScaleInternal();
+
+		//System.String UnityEngine.XR.XRSettings::get_loadedDeviceName()
+		void Register_UnityEngine_XR_XRSettings_get_loadedDeviceName();
+		Register_UnityEngine_XR_XRSettings_get_loadedDeviceName();
 
 		//System.Void UnityEngine.XR.XRSettings::set_showDeviceView(System.Boolean)
 		void Register_UnityEngine_XR_XRSettings_set_showDeviceView();

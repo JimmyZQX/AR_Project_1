@@ -24,9 +24,11 @@ extern void XRSettings_get_eyeTextureHeight_m8EE6F89E72068B09B75DCCD94AC94381365
 extern void XRSettings_get_renderViewportScale_m0EAE782A08AAE8C031FB3E5A78FD32ADE8664CF0 (void);
 // 0x00000006 System.Single UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()
 extern void XRSettings_get_renderViewportScaleInternal_mE412E2A5E856CCDCA89D5A92DBC9E78F226922ED (void);
-// 0x00000007 System.Void UnityEngine.XR.XRDevice::InvokeDeviceLoaded(System.String)
+// 0x00000007 System.String UnityEngine.XR.XRSettings::get_loadedDeviceName()
+extern void XRSettings_get_loadedDeviceName_m0EC0BC3BFBF1483DBC766D882A54677F2DBFC4BA (void);
+// 0x00000008 System.Void UnityEngine.XR.XRDevice::InvokeDeviceLoaded(System.String)
 extern void XRDevice_InvokeDeviceLoaded_m07DEE6645B38728C7B8615DAAD6BE592C1DC59F9 (void);
-static Il2CppMethodPointer s_methodPointers[7] = 
+static Il2CppMethodPointer s_methodPointers[8] = 
 {
 	XRSettings_get_showDeviceView_m02403BF22E14ECCBC281E9E8DD4462F12F50B167,
 	XRSettings_set_showDeviceView_mCB49786110652E6E784E237B0A1294CF6EF092F1,
@@ -34,23 +36,25 @@ static Il2CppMethodPointer s_methodPointers[7] =
 	XRSettings_get_eyeTextureHeight_m8EE6F89E72068B09B75DCCD94AC9438136507C28,
 	XRSettings_get_renderViewportScale_m0EAE782A08AAE8C031FB3E5A78FD32ADE8664CF0,
 	XRSettings_get_renderViewportScaleInternal_mE412E2A5E856CCDCA89D5A92DBC9E78F226922ED,
+	XRSettings_get_loadedDeviceName_m0EC0BC3BFBF1483DBC766D882A54677F2DBFC4BA,
 	XRDevice_InvokeDeviceLoaded_m07DEE6645B38728C7B8615DAAD6BE592C1DC59F9,
 };
-static const int32_t s_InvokerIndices[7] = 
+static const int32_t s_InvokerIndices[8] = 
 {
-	7933,
-	7828,
-	7947,
-	7947,
-	7973,
-	7973,
-	7836,
+	8205,
+	8099,
+	8220,
+	8220,
+	8247,
+	8247,
+	8228,
+	8107,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule = 
 {
 	"UnityEngine.VRModule.dll",
-	7,
+	8,
 	s_methodPointers,
 	0,
 	NULL,

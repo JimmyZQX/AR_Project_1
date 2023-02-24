@@ -11,7 +11,7 @@
         "type": "MAIN",
         "splits": [],
         "versionCode": 1,
-        "versionName": "0.2.30",
+        "versionName": "0.2.31",
         "outputFile": "launcher-release.apk",
         "fullName": "release",
         "baseName": "release",

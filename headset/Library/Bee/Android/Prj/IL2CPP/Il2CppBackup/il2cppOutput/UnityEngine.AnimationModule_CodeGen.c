@@ -174,7 +174,33 @@ extern void AnimatorControllerPlayable_SetHandle_mD86A3C0D03453FAF21903F7A52A743
 extern void AnimatorControllerPlayable_Equals_m14125BB4CCFCDFFD098223AF20E38501BA264180 (void);
 // 0x00000051 System.Void UnityEngine.Animations.AnimatorControllerPlayable::.cctor()
 extern void AnimatorControllerPlayable__cctor_m2CAAC6602D222EA5CEE372B583EFD1C74A4A6181 (void);
-static Il2CppMethodPointer s_methodPointers[81] = 
+// 0x00000052 System.Void UnityEngine.Animations.ConstraintSource::set_sourceTransform(UnityEngine.Transform)
+extern void ConstraintSource_set_sourceTransform_mC905D9E04293D785BA40E1E0378457A77170A31B (void);
+// 0x00000053 System.Void UnityEngine.Animations.ConstraintSource::set_weight(System.Single)
+extern void ConstraintSource_set_weight_m40EADC470F7D906EEB89A515F75CC8B0648368D7 (void);
+// 0x00000054 System.Int32 UnityEngine.Animations.ParentConstraint::get_sourceCount()
+extern void ParentConstraint_get_sourceCount_m6D83D678E00CFBC77A4626EB9B904C59C24FFBCB (void);
+// 0x00000055 System.Int32 UnityEngine.Animations.ParentConstraint::GetSourceCountInternal(UnityEngine.Animations.ParentConstraint)
+extern void ParentConstraint_GetSourceCountInternal_m039C9B9DAF82FCA74ACA04F462623BD3990C778F (void);
+// 0x00000056 System.Void UnityEngine.Animations.ParentConstraint::SetTranslationOffset(System.Int32,UnityEngine.Vector3)
+extern void ParentConstraint_SetTranslationOffset_mFD4350AE123DE476B284219935CB52DE1544BF15 (void);
+// 0x00000057 System.Void UnityEngine.Animations.ParentConstraint::SetTranslationOffsetInternal(System.Int32,UnityEngine.Vector3)
+extern void ParentConstraint_SetTranslationOffsetInternal_m9E22067F8904B87016C803380E24F266FDBFA01D (void);
+// 0x00000058 System.Void UnityEngine.Animations.ParentConstraint::SetRotationOffset(System.Int32,UnityEngine.Vector3)
+extern void ParentConstraint_SetRotationOffset_m8C346F0ECB6FF54DE74D3170229AD05522FB99AA (void);
+// 0x00000059 System.Void UnityEngine.Animations.ParentConstraint::SetRotationOffsetInternal(System.Int32,UnityEngine.Vector3)
+extern void ParentConstraint_SetRotationOffsetInternal_mC149045D55A9824067299E474112E61D0EAA2E14 (void);
+// 0x0000005A System.Void UnityEngine.Animations.ParentConstraint::ValidateSourceIndex(System.Int32)
+extern void ParentConstraint_ValidateSourceIndex_m081826C60AECFBDBCA08F338D069837D0D75C49B (void);
+// 0x0000005B System.Int32 UnityEngine.Animations.ParentConstraint::AddSource(UnityEngine.Animations.ConstraintSource)
+extern void ParentConstraint_AddSource_m37997059B86A1DB5EFD8E94F7EA754120DF99194 (void);
+// 0x0000005C System.Void UnityEngine.Animations.ParentConstraint::SetTranslationOffsetInternal_Injected(System.Int32,UnityEngine.Vector3&)
+extern void ParentConstraint_SetTranslationOffsetInternal_Injected_m3995DB6B0F0DB7740D1DAFB5ED3937F85117DE88 (void);
+// 0x0000005D System.Void UnityEngine.Animations.ParentConstraint::SetRotationOffsetInternal_Injected(System.Int32,UnityEngine.Vector3&)
+extern void ParentConstraint_SetRotationOffsetInternal_Injected_mBABF60A9D803907CA7A629A84291937287F4A8B3 (void);
+// 0x0000005E System.Int32 UnityEngine.Animations.ParentConstraint::AddSource_Injected(UnityEngine.Animations.ConstraintSource&)
+extern void ParentConstraint_AddSource_Injected_m0A8CB716DCF35CAE4C614632A76B6897F87E3788 (void);
+static Il2CppMethodPointer s_methodPointers[94] = 
 {
 	StateMachineBehaviour_OnStateEnter_mB618EFE75A50CBAA3EE6471E64A3E2CA2A2C90FD,
 	StateMachineBehaviour_OnStateUpdate_mC1A83A4F693AF3AB51BC592A0CE525CE4F320D6B,
@@ -257,6 +283,19 @@ static Il2CppMethodPointer s_methodPointers[81] =
 	AnimatorControllerPlayable_SetHandle_mD86A3C0D03453FAF21903F7A52A743AB2DA6DED4,
 	AnimatorControllerPlayable_Equals_m14125BB4CCFCDFFD098223AF20E38501BA264180,
 	AnimatorControllerPlayable__cctor_m2CAAC6602D222EA5CEE372B583EFD1C74A4A6181,
+	ConstraintSource_set_sourceTransform_mC905D9E04293D785BA40E1E0378457A77170A31B,
+	ConstraintSource_set_weight_m40EADC470F7D906EEB89A515F75CC8B0648368D7,
+	ParentConstraint_get_sourceCount_m6D83D678E00CFBC77A4626EB9B904C59C24FFBCB,
+	ParentConstraint_GetSourceCountInternal_m039C9B9DAF82FCA74ACA04F462623BD3990C778F,
+	ParentConstraint_SetTranslationOffset_mFD4350AE123DE476B284219935CB52DE1544BF15,
+	ParentConstraint_SetTranslationOffsetInternal_m9E22067F8904B87016C803380E24F266FDBFA01D,
+	ParentConstraint_SetRotationOffset_m8C346F0ECB6FF54DE74D3170229AD05522FB99AA,
+	ParentConstraint_SetRotationOffsetInternal_mC149045D55A9824067299E474112E61D0EAA2E14,
+	ParentConstraint_ValidateSourceIndex_m081826C60AECFBDBCA08F338D069837D0D75C49B,
+	ParentConstraint_AddSource_m37997059B86A1DB5EFD8E94F7EA754120DF99194,
+	ParentConstraint_SetTranslationOffsetInternal_Injected_m3995DB6B0F0DB7740D1DAFB5ED3937F85117DE88,
+	ParentConstraint_SetRotationOffsetInternal_Injected_mBABF60A9D803907CA7A629A84291937287F4A8B3,
+	ParentConstraint_AddSource_Injected_m0A8CB716DCF35CAE4C614632A76B6897F87E3788,
 };
 extern void AnimationClipPlayable_GetHandle_mE775F2247901BA293DB01A8D384D3F9D02A25627_AdjustorThunk (void);
 extern void AnimationClipPlayable_Equals_mC5263BEA86C02CEDF93C5B14EAA168883E1DB5F4_AdjustorThunk (void);
@@ -285,7 +324,9 @@ extern void AnimatorControllerPlayable__ctor_mBCB9475E2740BE1AEB94C08BAD14D51333
 extern void AnimatorControllerPlayable_GetHandle_m718D9A4E0DB7AC62947B1D09E47DBCD25C27AF6C_AdjustorThunk (void);
 extern void AnimatorControllerPlayable_SetHandle_mD86A3C0D03453FAF21903F7A52A743AB2DA6DED4_AdjustorThunk (void);
 extern void AnimatorControllerPlayable_Equals_m14125BB4CCFCDFFD098223AF20E38501BA264180_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[27] = 
+extern void ConstraintSource_set_sourceTransform_mC905D9E04293D785BA40E1E0378457A77170A31B_AdjustorThunk (void);
+extern void ConstraintSource_set_weight_m40EADC470F7D906EEB89A515F75CC8B0648368D7_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[29] = 
 {
 	{ 0x0600002E, AnimationClipPlayable_GetHandle_mE775F2247901BA293DB01A8D384D3F9D02A25627_AdjustorThunk },
 	{ 0x0600002F, AnimationClipPlayable_Equals_mC5263BEA86C02CEDF93C5B14EAA168883E1DB5F4_AdjustorThunk },
@@ -314,98 +355,113 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[27] =
 	{ 0x0600004E, AnimatorControllerPlayable_GetHandle_m718D9A4E0DB7AC62947B1D09E47DBCD25C27AF6C_AdjustorThunk },
 	{ 0x0600004F, AnimatorControllerPlayable_SetHandle_mD86A3C0D03453FAF21903F7A52A743AB2DA6DED4_AdjustorThunk },
 	{ 0x06000050, AnimatorControllerPlayable_Equals_m14125BB4CCFCDFFD098223AF20E38501BA264180_AdjustorThunk },
+	{ 0x06000052, ConstraintSource_set_sourceTransform_mC905D9E04293D785BA40E1E0378457A77170A31B_AdjustorThunk },
+	{ 0x06000053, ConstraintSource_set_weight_m40EADC470F7D906EEB89A515F75CC8B0648368D7_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[81] = 
+static const int32_t s_InvokerIndices[94] = 
 {
-	1462,
-	1462,
-	1462,
-	1462,
-	1462,
-	2571,
-	2571,
-	990,
-	990,
-	990,
-	990,
-	990,
-	1468,
-	1468,
-	5360,
-	5360,
-	5166,
-	3164,
-	3164,
-	5250,
-	3911,
-	5219,
-	4363,
-	5250,
-	5166,
-	5360,
-	5360,
-	5360,
-	2583,
-	2410,
-	2363,
-	4363,
-	4363,
-	3700,
-	2410,
-	5166,
-	7577,
-	2583,
-	2410,
-	2363,
-	4363,
-	4363,
-	7836,
-	2573,
-	5360,
-	5256,
-	3094,
-	2602,
-	5256,
-	3095,
-	7297,
-	7987,
-	4371,
-	5256,
-	3096,
-	7987,
-	4371,
-	5256,
-	3097,
-	7987,
-	4371,
-	5256,
-	3098,
-	7987,
-	4371,
-	5256,
-	3099,
-	7987,
-	4371,
-	5256,
-	3100,
-	7987,
-	4371,
-	5256,
-	3101,
-	7987,
-	4371,
-	5256,
-	4371,
-	3102,
-	7987,
+	1511,
+	1511,
+	1511,
+	1511,
+	1511,
+	2670,
+	2670,
+	1024,
+	1024,
+	1024,
+	1024,
+	1024,
+	1517,
+	1517,
+	5558,
+	5558,
+	5354,
+	3283,
+	3283,
+	5442,
+	4052,
+	5410,
+	4524,
+	5442,
+	5354,
+	5558,
+	5558,
+	5558,
+	2682,
+	2506,
+	2457,
+	4524,
+	4524,
+	3835,
+	2506,
+	5354,
+	7842,
+	2682,
+	2506,
+	2457,
+	4524,
+	4524,
+	8107,
+	2672,
+	5558,
+	5448,
+	3212,
+	2703,
+	5448,
+	3213,
+	7555,
+	8264,
+	4532,
+	5448,
+	3214,
+	8264,
+	4532,
+	5448,
+	3215,
+	8264,
+	4532,
+	5448,
+	3216,
+	8264,
+	4532,
+	5448,
+	3217,
+	8264,
+	4532,
+	5448,
+	3218,
+	8264,
+	4532,
+	5448,
+	3219,
+	8264,
+	4532,
+	5448,
+	4532,
+	3220,
+	8264,
+	4524,
+	4567,
+	5410,
+	7842,
+	2546,
+	2546,
+	2546,
+	2546,
+	4494,
+	3779,
+	2414,
+	2414,
+	3766,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AnimationModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_AnimationModule_CodeGenModule = 
 {
 	"UnityEngine.AnimationModule.dll",
-	81,
+	94,
 	s_methodPointers,
-	27,
+	29,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,

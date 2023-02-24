@@ -32,6 +32,17 @@ struct VirtualFuncInvoker0
 		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
 struct GenericVirtualActionInvoker0
 {
 	typedef void (*Action)(void*, const RuntimeMethod*);
@@ -114,6 +125,10 @@ struct InvokerActionInvoker2<T1*, T2*>
 	}
 };
 
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
+struct Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180;
+// System.Collections.Generic.Dictionary`2<System.Single,System.Int32>
+struct Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155;
 // System.Collections.Generic.IComparer`1<AudioHelm.Note>
 struct IComparer_1_t468E5614B35BD78FB7E458BD519CB992FFB3350E;
 // System.Collections.Generic.IComparer`1<System.Object>
@@ -124,22 +139,34 @@ struct IComparer_1_t785178218C9E9D3657A8734FB99BEC8230E57D77;
 struct IEnumerable_1_t80DC0A473E34AB72458F7A0BAD3309AD7C83933A;
 // System.Collections.Generic.IEnumerable`1<System.Object>
 struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
+// System.Collections.Generic.IEqualityComparer`1<System.Int32>
+struct IEqualityComparer_1_tDBFC8496F14612776AF930DBF84AFE7D06D1F0E9;
+// System.Collections.Generic.IEqualityComparer`1<System.Single>
+struct IEqualityComparer_1_t0F7348B7C3DBAC2DFD60DA8607A8BCD442B3E713;
 // System.Collections.Generic.IList`1<AudioHelm.Note>
 struct IList_1_tF65EAFA63B9E2AA687BBEDC83656DAB575F3E73E;
 // System.Collections.Generic.IList`1<System.Object>
 struct IList_1_t6EE90D273EFCF5E7E4C37FAB712E70BB6F1B4BFF;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,System.Int32>
+struct KeyCollection_t67E8423B5AEB30C254013AD88AB68D2A36F1F436;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Single,System.Int32>
+struct KeyCollection_tC0D19BE5E2CF46C731B1257974FB34EB8AF90B93;
 // System.Collections.Generic.SortedList`2/KeyList<AudioHelm.Sequencer/NotePosition,AudioHelm.Note>
 struct KeyList_t01CF0D0048B8C0C0FB0003B1461F830CECF98E3D;
 // System.Collections.Generic.SortedList`2/KeyList<AudioHelm.Sequencer/NotePosition,System.Object>
 struct KeyList_t018984F0A21E5CFF8E35EB492E43EF52B39A5FC1;
 // System.Collections.Generic.List`1<UnityEngine.AudioSource>
 struct List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235;
+// System.Collections.Generic.List`1<AudioHelm.HelmParameter>
+struct List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E;
 // System.Collections.Generic.List`1<AudioHelm.Keyzone>
 struct List_1_tE3F0C904204F5C4191A68CD16AB4A94AC16E33D8;
 // System.Collections.Generic.List`1<AudioHelm.Note>
 struct List_1_t8B0AE78FF4A508C20C1FC0AD0BF595E84EB2F75F;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<System.Single>
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918;
 // System.Collections.Generic.List`1<AudioHelm.Sampler/ActiveNote>
 struct List_1_tD666A415E18FD7649AAE78ABA3FE61844D81D4D1;
 // System.Collections.Generic.SortedList`2<AudioHelm.Sequencer/NotePosition,AudioHelm.Note>
@@ -152,10 +179,18 @@ struct UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A;
 struct UnityEvent_1_t8A3E615D0BD5BEF9FE317EBAC9DE401F480BAF4C;
 // UnityEngine.Events.UnityEvent`1<System.Object>
 struct UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,System.Int32>
+struct ValueCollection_t74AF7C1BAE06C66E984668F663D574ED6A596D28;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Single,System.Int32>
+struct ValueCollection_t7A94FB6F405763B242186CB9B52F420AA48A533C;
 // System.Collections.Generic.SortedList`2/ValueList<AudioHelm.Sequencer/NotePosition,AudioHelm.Note>
 struct ValueList_t2D748A0A711B77BF66A472245EC4B6B63CA7A95B;
 // System.Collections.Generic.SortedList`2/ValueList<AudioHelm.Sequencer/NotePosition,System.Object>
 struct ValueList_t90FB8322E52667C009B114D0FCD293E36B0C2455;
+// System.Collections.Generic.Dictionary`2/Entry<System.Int32,System.Int32>[]
+struct EntryU5BU5D_t197C691F43F1694B771BF83C278D12BBFEEB86FA;
+// System.Collections.Generic.Dictionary`2/Entry<System.Single,System.Int32>[]
+struct EntryU5BU5D_tDDD6B29F0AFD30538CB5CDC039EF15B524687135;
 // UnityEngine.AudioSource[]
 struct AudioSourceU5BU5D_tBBF6E920E0DC80D53D4BB2A8D4C80D244EF170B2;
 // System.Boolean[]
@@ -164,8 +199,14 @@ struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Reflection.FieldInfo[]
+struct FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8;
 // AudioHelm.HelmModulationSetting[]
 struct HelmModulationSettingU5BU5D_tF8A62F76FE080A933043718AED2BB44C7A519A8A;
+// AudioHelm.HelmParameter[]
+struct HelmParameterU5BU5D_t1E305F68EFAF5F3709DC69CABD4570608A526E16;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 // AudioHelm.Keyzone[]
@@ -182,6 +223,8 @@ struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.String[]
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+// System.Type[]
+struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 // AudioHelm.Sampler/ActiveNote[]
 struct ActiveNoteU5BU5D_t60A1E4F612F14B7613343C851AF12097D1ECAAC8;
 // AudioHelm.Sequencer/NotePosition[]
@@ -198,6 +241,8 @@ struct AudioMixerGroup_tD29AC8336F7425DF007944F8195CEABF34FC3311;
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+// System.Reflection.Binder
+struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // UnityEngine.Coroutine
@@ -206,12 +251,20 @@ struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// System.Reflection.FieldInfo
+struct FieldInfo_t;
 // System.IO.FileStream
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8;
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+// AudioHelm.HelmAudioReceive
+struct HelmAudioReceive_t5A6911E6B0D4CB81803E0E1CFA39B1645A4019FC;
+// AudioHelm.HelmController
+struct HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6;
 // AudioHelm.HelmModulationSetting
 struct HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0;
+// AudioHelm.HelmParameter
+struct HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1;
 // AudioHelm.HelmPatch
 struct HelmPatch_t10167C36E80A27280B2B3A71BCF27E1AEFFF4D04;
 // AudioHelm.HelmPatchFormat
@@ -230,6 +283,8 @@ struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
 // AudioHelm.Keyzone
 struct Keyzone_tD2E143C27EFF34DF7A408CE78389BADE55F8EE9B;
+// System.Reflection.MemberFilter
+struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
 // AudioHelm.MidiFile
@@ -262,6 +317,8 @@ struct Sequencer_t8CF9E0ED74B3253FC15BDAF29AD89FD39C5360BD;
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE;
 // System.String
 struct String_t;
+// System.Type
+struct Type_t;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // UnityEngine.WaitForSeconds
@@ -272,6 +329,10 @@ struct PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E;
 struct PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072;
 // AudioHelm.AudioHelmClock/ResetAction
 struct ResetAction_t41E33523E50BEEF846F8B78ACCA4273A9E70D837;
+// AudioHelm.HelmController/<WaitFrequencyOff>d__52
+struct U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433;
+// AudioHelm.HelmController/<WaitNoteOff>d__48
+struct U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32;
 // AudioHelm.MidiFile/MidiData
 struct MidiData_tA9E61B8783E0715738B9A5534462F7457CA77AB9;
 // AudioHelm.Note/NoteAction
@@ -299,13 +360,19 @@ IL2CPP_EXTERN_C RuntimeClass* ActiveNote_tC1958E5F58B8FBD7E898AC5845B4CE4939FCED
 IL2CPP_EXTERN_C RuntimeClass* AudioHelmClock_t5280AC98E964707AAC361FD4B6107AA7ACDB85B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BeatAction_t1B36003AA2A51900EEA60D115551B533E373BF01_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HelmPatchSettings_t716C53C6A4F7D6D8D21BE8BFE1281261E7850B97_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IList_1_tF65EAFA63B9E2AA687BBEDC83656DAB575F3E73E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Keyzone_tD2E143C27EFF34DF7A408CE78389BADE55F8EE9B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t8B0AE78FF4A508C20C1FC0AD0BF595E84EB2F75F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tD666A415E18FD7649AAE78ABA3FE61844D81D4D1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tE3F0C904204F5C4191A68CD16AB4A94AC16E33D8_il2cpp_TypeInfo_var;
@@ -323,9 +390,13 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_i
 IL2CPP_EXTERN_C RuntimeClass* ResetAction_t41E33523E50BEEF846F8B78ACCA4273A9E70D837_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Sequencer_t8CF9E0ED74B3253FC15BDAF29AD89FD39C5360BD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SortedList_2_t0822BF802F58481FE1359D2F82A2E21D234A2CAB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CTurnVoiceOffInSecondsU3Ed__28_t287E122AD8CB38348CD26F172AD897776B2F6577_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Utils_tDAD97EEEE6E24993B53FA93C6A655156617B6370_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
@@ -358,6 +429,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral294D1261A9B3CEEBBCD807E74E302F7AACE5884C
 IL2CPP_EXTERN_C String_t* _stringLiteral2ECA952A01BA72F98EB43E5597AC22F542E105E0;
 IL2CPP_EXTERN_C String_t* _stringLiteral2F3906DD276C03C2CD5D11E929C1F821E73DA0E4;
 IL2CPP_EXTERN_C String_t* _stringLiteral323A153F63F69A6B8A9B337B37B6AC215F425642;
+IL2CPP_EXTERN_C String_t* _stringLiteral32CB56FB631F837466F4B598C1B0C81DD1ACB6B2;
 IL2CPP_EXTERN_C String_t* _stringLiteral35346D991D69ECEEC15A0F54ADFCCBBB5F4905A8;
 IL2CPP_EXTERN_C String_t* _stringLiteral3CEAEFA5E43D94E0C8A436911DDB4484FE61FAB5;
 IL2CPP_EXTERN_C String_t* _stringLiteral3ED9A9C33C56E7C7C8B081035EC509AA731CFC8F;
@@ -419,6 +491,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC4D0F760E77B90A7C1B767E198B7B5823CC0BA13
 IL2CPP_EXTERN_C String_t* _stringLiteralC86BD663592FB6303A33A889EF1B7A8EB24F5596;
 IL2CPP_EXTERN_C String_t* _stringLiteralC921BE7D8348F718A0F59A6A36056A25F0083AF3;
 IL2CPP_EXTERN_C String_t* _stringLiteralCAA962569EF6C0B0543A8466D4DC9925EE8A255A;
+IL2CPP_EXTERN_C String_t* _stringLiteralCD518A212830785B62EB94740CE4D6563B7DBD1F;
 IL2CPP_EXTERN_C String_t* _stringLiteralCDC83138D17733F890111A63EBF95BC1D98564DE;
 IL2CPP_EXTERN_C String_t* _stringLiteralCFA33573144A727E231089F72C513BBED67ED7DD;
 IL2CPP_EXTERN_C String_t* _stringLiteralD0E0D0B9B6D6E03F8783DA16695400C535CFDBD8;
@@ -441,8 +514,21 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF13C191784D4B0357097A9C061F079E7DDA1BBBF
 IL2CPP_EXTERN_C String_t* _stringLiteralF227B4CD5ED3B38186846A811151FD4CC28E71B0;
 IL2CPP_EXTERN_C String_t* _stringLiteralF667D8C42CE6B188B05D2C687F56A439982AFC23;
 IL2CPP_EXTERN_C String_t* _stringLiteralF701F99AE61D51384B2AE5D3A9083ECC5EBE9DAF;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisSampler_tC023C7EE0644B0C484E2DA3F3065CA5A54FACA49_m950AAC79EF3278D6111DF1EF99CBCCF41A6C7944_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponents_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m2C6D82D3DE7BFC234CEA24B6AC1EF7A3035F2D21_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_mDAB073697D28935E30C9068F1FFD50963C95C03E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m050AC0D9D6F681C25C12FBBC7DD71F926D206ED9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m7F9E8F6BBCE7C08FEAC01058D3F1568B4C0D3D47_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m6862124076457E217895F9A6113FEA9756F8CCC5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m8B4BFCF9D864D194958456A4442F27FA218C1503_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m8CD500CBD91BCD8B5A2B16474BDEE648E67B231F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m35D78E6325CD41F0AC4FD5FC9951A2175BFC03F5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m6831425102F10D5D8AB3F01E7AA34ED61C02CA44_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m728A6A54DA0AB1E4D2A97341B6C36614A49D1D8C_RuntimeMethod_var;
@@ -456,7 +542,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m4F15E2C4D265A17EFE2
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m53E56A35FE7F3ECDDF056D3C61BE063BAA9420D4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mA47B1E8DA8FE2262D34513036E679F9C036C45FA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* JsonUtility_FromJson_TisHelmPatchFormat_tBE0931362551773E035AAE9F1196BCD6214D919D_m1023A80A0EC801E0EE9B4CDEC18F1A3895BFE56E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m35B1017683CAD7229783A8B32A5D7231BA68186E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m7CA0DA7E864F25803FE5CDBBB8ED511B40ADB368_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m854AB1F4912F4A70C478FAE8E282C8F6CE880550_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mDF1F643D7623D39CEE9F9CA88E5FE398C5F3A582_RuntimeMethod_var;
@@ -467,21 +555,28 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m0685BA1F3CA72B18629EA
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m11EAFBE3F2AF4F603AE8AA2CA97E0EA01863A172_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mB4ED57667A9943F27881BDCA081A0E9A041A58D3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mF4D3C7475D2AF5430A078998DA4B05683288C6C1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_IndexOf_m3FB2B8958DCBDCDE974E5685588F0D688ADA1D0F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_IndexOf_mA411D6734864EFB097E0A7CAFC6B1E80918C8141_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_m46CE55B31852317BFE0B96D37EB099ACB615D8E3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_m88B399DBB31AB555983A92B9D4EFDDE6DA2C9835_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_mC3F15AE26B57F5F59BBF92626E950F85E9B305BF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_mD6DF1EF285337A1A2B61F1EC91984C8F7761E284_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Reverse_m5E0D09AC978584DBC94A5B92C339910ECFCE5A00_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Sort_mDEF417D768A1B200A1E809DF828587B802DC74FD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m1572AF991CD3CD21B43B0D6F699FE6296DEDF9E7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m823EDBB00B44A22E7730C64454920F4D657BDF98_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m82ECB5B6520AC90B29D213E11DB27D32F77B556E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m9900814BE6375E848ADD7176341C88F91B83466E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mB785B10B81A7CD64216DEFA7B2C8D781950DA4C5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mF0FD04F28F865513C4CF4AFF71F9C68B1CB7F971_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m79BCCF27804F0CC7C40F4C305569EC42B2C4854B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mAFE1D6DB8AE0A5D564D4AF77C98E04F20B1A63AC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m1645E88C8817F0DB794CB092A83B3DAA9441584A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m473C904C34796A918B7077CF851A001343C0A18A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SortedList_2_Add_m4D776CB4AC5BE625A28AD154845B85167458336D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SortedList_2_Clear_m3BE12B6FB85B0C0C918C66067C33EACD3EFB1798_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SortedList_2_ContainsKey_mCB1FA8DA7315FF4560AD07D3E10CEC205EC50968_RuntimeMethod_var;
@@ -491,11 +586,14 @@ IL2CPP_EXTERN_C const RuntimeMethod* SortedList_2__ctor_mC98F2F4B7EB439FEF8BBC1C
 IL2CPP_EXTERN_C const RuntimeMethod* SortedList_2_get_Count_mC8FD1DB5ABB273A79EC5EC552F7B8A563C6B6ED4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SortedList_2_get_Values_m12E8E853C562C5C4CA250DFCF7E8C6CD7A433BE4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CTurnVoiceOffInSecondsU3Ed__28_System_Collections_IEnumerator_Reset_mFCD24F1FAA26BD614B2D8F97208919A7E5BF6305_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitFrequencyOffU3Ed__52_System_Collections_IEnumerator_Reset_mF9CC79B03F45BFFD37319CF6E868BB530608A0B8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitNoteOffU3Ed__48_System_Collections_IEnumerator_Reset_m62394481B8C11DECAD5CBB92426EBABDDA2533B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_Invoke_m28FA07FF85BEAFA67A163AB07089FCA681AC1BEA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_m7F44B1C9813D8161ACA01483698D086A35645E55_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_mCE6AA3B34C1148F11D1273C068A6A39430911684_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Utils_CopyComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m20A1B40988A4F38F527257D1190DBA3A6D9B88C8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* HelmPatchSettings_t716C53C6A4F7D6D8D21BE8BFE1281261E7850B97_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -504,6 +602,8 @@ struct Exception_t_marshaled_pinvoke;
 struct AudioSourceU5BU5D_tBBF6E920E0DC80D53D4BB2A8D4C80D244EF170B2;
 struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+struct FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8;
+struct HelmModulationSettingU5BU5D_tF8A62F76FE080A933043718AED2BB44C7A519A8A;
 struct NoteRowU5BU5D_tA8FABE369EA8491DC9E01738A3839EC89C76B33D;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
@@ -517,6 +617,56 @@ IL2CPP_EXTERN_C_END
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
+struct Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t197C691F43F1694B771BF83C278D12BBFEEB86FA* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t67E8423B5AEB30C254013AD88AB68D2A36F1F436* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t74AF7C1BAE06C66E984668F663D574ED6A596D28* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.Single,System.Int32>
+struct Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_tDDD6B29F0AFD30538CB5CDC039EF15B524687135* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tC0D19BE5E2CF46C731B1257974FB34EB8AF90B93* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t7A94FB6F405763B242186CB9B52F420AA48A533C* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
 
 // System.Collections.Generic.List`1<UnityEngine.AudioSource>
 struct List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235  : public RuntimeObject
@@ -535,6 +685,25 @@ struct List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235_StaticFields
 {
 	// T[] System.Collections.Generic.List`1::s_emptyArray
 	AudioSourceU5BU5D_tBBF6E920E0DC80D53D4BB2A8D4C80D244EF170B2* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<AudioHelm.HelmParameter>
+struct List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	HelmParameterU5BU5D_t1E305F68EFAF5F3709DC69CABD4570608A526E16* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	HelmParameterU5BU5D_t1E305F68EFAF5F3709DC69CABD4570608A526E16* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<AudioHelm.Keyzone>
@@ -592,6 +761,25 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 {
 	// T[] System.Collections.Generic.List`1::s_emptyArray
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Single>
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<AudioHelm.Sampler/ActiveNote>
@@ -665,6 +853,25 @@ struct HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0  : public
 	String_t* ___destination_1;
 	// System.Single AudioHelm.HelmModulationSetting::amount
 	float ___amount_2;
+};
+
+// AudioHelm.HelmParameter
+struct HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1  : public RuntimeObject
+{
+	// AudioHelm.Param AudioHelm.HelmParameter::parameter_
+	int32_t ___parameter__0;
+	// AudioHelm.HelmParameter/ScaleType AudioHelm.HelmParameter::scaleType
+	int32_t ___scaleType_1;
+	// AudioHelm.HelmController AudioHelm.HelmParameter::parent
+	HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* ___parent_2;
+	// System.Single AudioHelm.HelmParameter::lastValue
+	float ___lastValue_3;
+	// System.Single AudioHelm.HelmParameter::minimumRange
+	float ___minimumRange_4;
+	// System.Single AudioHelm.HelmParameter::maximumRange
+	float ___maximumRange_5;
+	// System.Single AudioHelm.HelmParameter::paramValue_
+	float ___paramValue__6;
 };
 
 // AudioHelm.HelmPatchFormat
@@ -1023,6 +1230,11 @@ struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshaled_co
 	Il2CppIUnknown* ____identity_0;
 };
 
+// System.Reflection.MemberInfo
+struct MemberInfo_t  : public RuntimeObject
+{
+};
+
 // AudioHelm.Native
 struct Native_tF839A071B17D2D0B66C4FFC47F9A65D988E131DB  : public RuntimeObject
 {
@@ -1098,6 +1310,36 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 // Native definition for COM marshalling of UnityEngine.YieldInstruction
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
+};
+
+// AudioHelm.HelmController/<WaitFrequencyOff>d__52
+struct U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433  : public RuntimeObject
+{
+	// System.Int32 AudioHelm.HelmController/<WaitFrequencyOff>d__52::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object AudioHelm.HelmController/<WaitFrequencyOff>d__52::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// System.Single AudioHelm.HelmController/<WaitFrequencyOff>d__52::length
+	float ___length_2;
+	// AudioHelm.HelmController AudioHelm.HelmController/<WaitFrequencyOff>d__52::<>4__this
+	HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* ___U3CU3E4__this_3;
+	// System.Single AudioHelm.HelmController/<WaitFrequencyOff>d__52::frequency
+	float ___frequency_4;
+};
+
+// AudioHelm.HelmController/<WaitNoteOff>d__48
+struct U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32  : public RuntimeObject
+{
+	// System.Int32 AudioHelm.HelmController/<WaitNoteOff>d__48::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object AudioHelm.HelmController/<WaitNoteOff>d__48::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// System.Single AudioHelm.HelmController/<WaitNoteOff>d__48::length
+	float ___length_2;
+	// AudioHelm.HelmController AudioHelm.HelmController/<WaitNoteOff>d__48::<>4__this
+	HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* ___U3CU3E4__this_3;
+	// System.Int32 AudioHelm.HelmController/<WaitNoteOff>d__48::note
+	int32_t ___note_4;
 };
 
 // AudioHelm.MidiFile/MidiData
@@ -1244,6 +1486,11 @@ struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F
 {
 	// System.Double System.Double::m_value
 	double ___m_value_0;
+};
+
+// System.Reflection.FieldInfo
+struct FieldInfo_t  : public MemberInfo_t
+{
 };
 
 // System.Int32
@@ -1639,43 +1886,43 @@ struct Exception_t_marshaled_com
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
 {
 	// System.Byte[] System.IO.FileStream::buf
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_7;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_8;
 	// System.String System.IO.FileStream::name
-	String_t* ___name_8;
+	String_t* ___name_9;
 	// Microsoft.Win32.SafeHandles.SafeFileHandle System.IO.FileStream::safeHandle
-	SafeFileHandle_t033FA6AAAC65F4BB25F4CBA9A242A58C95CD406E* ___safeHandle_9;
+	SafeFileHandle_t033FA6AAAC65F4BB25F4CBA9A242A58C95CD406E* ___safeHandle_10;
 	// System.Boolean System.IO.FileStream::isExposed
-	bool ___isExposed_10;
+	bool ___isExposed_11;
 	// System.Int64 System.IO.FileStream::append_startpos
-	int64_t ___append_startpos_11;
+	int64_t ___append_startpos_12;
 	// System.IO.FileAccess System.IO.FileStream::access
-	int32_t ___access_12;
+	int32_t ___access_13;
 	// System.Boolean System.IO.FileStream::owner
-	bool ___owner_13;
+	bool ___owner_14;
 	// System.Boolean System.IO.FileStream::async
-	bool ___async_14;
+	bool ___async_15;
 	// System.Boolean System.IO.FileStream::canseek
-	bool ___canseek_15;
+	bool ___canseek_16;
 	// System.Boolean System.IO.FileStream::anonymous
-	bool ___anonymous_16;
+	bool ___anonymous_17;
 	// System.Boolean System.IO.FileStream::buf_dirty
-	bool ___buf_dirty_17;
+	bool ___buf_dirty_18;
 	// System.Int32 System.IO.FileStream::buf_size
-	int32_t ___buf_size_18;
+	int32_t ___buf_size_19;
 	// System.Int32 System.IO.FileStream::buf_length
-	int32_t ___buf_length_19;
+	int32_t ___buf_length_20;
 	// System.Int32 System.IO.FileStream::buf_offset
-	int32_t ___buf_offset_20;
+	int32_t ___buf_offset_21;
 	// System.Int64 System.IO.FileStream::buf_start
-	int64_t ___buf_start_21;
+	int64_t ___buf_start_22;
 };
 
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
 {
 	// System.Byte[] System.IO.FileStream::buf_recycle
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_recycle_5;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_recycle_6;
 	// System.Object System.IO.FileStream::buf_recycle_lock
-	RuntimeObject* ___buf_recycle_lock_6;
+	RuntimeObject* ___buf_recycle_lock_7;
 };
 
 // AudioHelm.Note
@@ -1726,6 +1973,13 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
 {
 	// System.IntPtr System.RuntimeFieldHandle::value
+	intptr_t ___value_0;
+};
+
+// System.RuntimeTypeHandle
+struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
+{
+	// System.IntPtr System.RuntimeTypeHandle::value
 	intptr_t ___value_0;
 };
 
@@ -1783,6 +2037,31 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 // System.SystemException
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
 {
+};
+
+// System.Type
+struct Type_t  : public MemberInfo_t
+{
+	// System.RuntimeTypeHandle System.Type::_impl
+	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl_8;
+};
+
+struct Type_t_StaticFields
+{
+	// System.Reflection.Binder modreq(System.Runtime.CompilerServices.IsVolatile) System.Type::s_defaultBinder
+	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder_0;
+	// System.Char System.Type::Delimiter
+	Il2CppChar ___Delimiter_1;
+	// System.Type[] System.Type::EmptyTypes
+	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___EmptyTypes_2;
+	// System.Object System.Type::Missing
+	RuntimeObject* ___Missing_3;
+	// System.Reflection.MemberFilter System.Type::FilterAttribute
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute_4;
+	// System.Reflection.MemberFilter System.Type::FilterName
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
+	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
 };
 
 // System.AsyncCallback
@@ -1858,6 +2137,58 @@ struct AudioHelmClock_t5280AC98E964707AAC361FD4B6107AA7ACDB85B2_StaticFields
 // UnityEngine.AudioSource
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941
 {
+};
+
+// AudioHelm.HelmAudioReceive
+struct HelmAudioReceive_t5A6911E6B0D4CB81803E0E1CFA39B1645A4019FC  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Int32 AudioHelm.HelmAudioReceive::channel
+	int32_t ___channel_4;
+};
+
+// AudioHelm.HelmController
+struct HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Int32 AudioHelm.HelmController::channel
+	int32_t ___channel_6;
+	// System.Single AudioHelm.HelmController::synthParamValue0
+	float ___synthParamValue0_7;
+	// System.Single AudioHelm.HelmController::synthParamValue1
+	float ___synthParamValue1_8;
+	// System.Single AudioHelm.HelmController::synthParamValue2
+	float ___synthParamValue2_9;
+	// System.Single AudioHelm.HelmController::synthParamValue3
+	float ___synthParamValue3_10;
+	// System.Single AudioHelm.HelmController::synthParamValue4
+	float ___synthParamValue4_11;
+	// System.Single AudioHelm.HelmController::synthParamValue5
+	float ___synthParamValue5_12;
+	// System.Single AudioHelm.HelmController::synthParamValue6
+	float ___synthParamValue6_13;
+	// System.Single AudioHelm.HelmController::synthParamValue7
+	float ___synthParamValue7_14;
+	// System.Single AudioHelm.HelmController::synthParamValue8
+	float ___synthParamValue8_15;
+	// System.Single AudioHelm.HelmController::synthParamValue9
+	float ___synthParamValue9_16;
+	// System.Single AudioHelm.HelmController::synthParamValue10
+	float ___synthParamValue10_17;
+	// System.Single AudioHelm.HelmController::synthParamValue11
+	float ___synthParamValue11_18;
+	// System.Single AudioHelm.HelmController::synthParamValue12
+	float ___synthParamValue12_19;
+	// System.Single AudioHelm.HelmController::synthParamValue13
+	float ___synthParamValue13_20;
+	// System.Single AudioHelm.HelmController::synthParamValue14
+	float ___synthParamValue14_21;
+	// System.Single AudioHelm.HelmController::synthParamValue15
+	float ___synthParamValue15_22;
+	// System.Collections.Generic.List`1<AudioHelm.HelmParameter> AudioHelm.HelmController::synthParameters
+	List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* ___synthParameters_23;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> AudioHelm.HelmController::pressedNotes
+	Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* ___pressedNotes_24;
+	// System.Collections.Generic.Dictionary`2<System.Single,System.Int32> AudioHelm.HelmController::pressedFrequencies
+	Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* ___pressedFrequencies_25;
 };
 
 // AudioHelm.HelmPatch
@@ -1978,6 +2309,109 @@ struct SampleSequencer_tA89927463C47905E12B17D77D88CC8CC7E1DD36F  : public Seque
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+// System.Single[]
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) float m_Items[1];
+
+	inline float GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline float* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, float value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline float GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Reflection.FieldInfo[]
+struct FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8  : public RuntimeArray
+{
+	ALIGN_FIELD (8) FieldInfo_t* m_Items[1];
+
+	inline FieldInfo_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline FieldInfo_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, FieldInfo_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline FieldInfo_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline FieldInfo_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, FieldInfo_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// AudioHelm.HelmModulationSetting[]
+struct HelmModulationSettingU5BU5D_tF8A62F76FE080A933043718AED2BB44C7A519A8A  : public RuntimeArray
+{
+	ALIGN_FIELD (8) HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* m_Items[1];
+
+	inline HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // System.String[]
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
 {
@@ -2046,39 +2480,6 @@ struct NoteRowU5BU5D_tA8FABE369EA8491DC9E01738A3839EC89C76B33D  : public Runtime
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
-// System.Single[]
-struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C  : public RuntimeArray
-{
-	ALIGN_FIELD (8) float m_Items[1];
-
-	inline float GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline float* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, float value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline float GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
-	{
-		m_Items[index] = value;
 	}
 };
 // System.Delegate[]
@@ -2221,6 +2622,50 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 };
 
 
+// T UnityEngine.Component::GetComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Single>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_gshared (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Single>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___item0, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Single>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_gshared (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Object>::IndexOf(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_IndexOf_m378F61BA812B79DEE58D86FE8AA9F20E3FC7D85F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::Clear()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::Clear()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Clear_mDAB073697D28935E30C9068F1FFD50963C95C03E_gshared (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::ContainsKey(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m050AC0D9D6F681C25C12FBBC7DD71F926D206ED9_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::ContainsKey(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m7F9E8F6BBCE7C08FEAC01058D3F1568B4C0D3D47_gshared (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::TryGetValue(TKey,TValue&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, int32_t* ___value1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::set_Item(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, int32_t ___value1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::Remove(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m6862124076457E217895F9A6113FEA9756F8CCC5_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::TryGetValue(TKey,TValue&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E_gshared (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, int32_t* ___value1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::set_Item(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF_gshared (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, int32_t ___value1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::Remove(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m8B4BFCF9D864D194958456A4442F27FA218C1503_gshared (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m8CD500CBD91BCD8B5A2B16474BDEE648E67B231F_gshared (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, const RuntimeMethod* method) ;
 // T UnityEngine.JsonUtility::FromJson<System.Object>(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JsonUtility_FromJson_TisRuntimeObject_m3A645CB2B6525E4A5835EA8A8CEBD39C7E2C444A_gshared (String_t* ___json0, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
@@ -2231,30 +2676,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mE097DBD72433D1AFC11733F5678602603A756424_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) ;
-// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // T[] UnityEngine.Component::GetComponents<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Component_GetComponents_TisRuntimeObject_m35447B0B07F9C06A1AF846E482EC6FEB09D2436F_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T AudioHelm.Utils::CopyComponent<System.Object>(T,UnityEngine.GameObject)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Utils_CopyComponent_TisRuntimeObject_mADBEDC2B34BE545B7F91DECFBDBEF231A255E027_gshared (RuntimeObject* ___original0, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___destination1, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
-// System.Int32 System.Collections.Generic.List`1<System.Object>::IndexOf(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_IndexOf_m378F61BA812B79DEE58D86FE8AA9F20E3FC7D85F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
-// System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Contains(T)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
-// T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Clear()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Object>::Invoke(T0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_m6CDC8B0639CE8935E2E13D10B2C8E500968130B6_gshared (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* __this, RuntimeObject* ___arg00, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.SortedList`2<AudioHelm.Sequencer/NotePosition,System.Object>::Remove(TKey)
@@ -2284,6 +2715,228 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_m8D77F4F05F69D0E52E8A
 // System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_mCE6AA3B34C1148F11D1273C068A6A39430911684_gshared (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A* __this, const RuntimeMethod* method) ;
 
+// System.Boolean AudioHelm.Native::HelmGetBufferData(System.Int32,System.Single[],System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Native_HelmGetBufferData_m0F86D424D623B7563253A4C391540BE8E01673DC (int32_t ___channel0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___buffer1, int32_t ___samples2, int32_t ___numAudioChannels3, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController::AllNotesOff()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_AllNotesOff_m2EC92BD01883DB7D806555210EF985A61C33A2B0 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.AudioSource>()
+inline AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// System.Void AudioHelm.Utils::InitAudioSource(UnityEngine.AudioSource)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utils_InitAudioSource_m6BA81BE8F035296C90D480535476CA8BC7B4DC7E (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audio0, const RuntimeMethod* method) ;
+// System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m2570A2A5B32A5E9D9F0F38B37459DA18736C823E (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___handle0, const RuntimeMethod* method) ;
+// System.Reflection.FieldInfo[] System.Type::GetFields()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* Type_GetFields_mC0570FF1986A6D93FA7976303B44B2FF8D0BC77F (Type_t* __this, const RuntimeMethod* method) ;
+// System.Void AudioHelm.Native::HelmClearModulations(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmClearModulations_mDF9D25C09DF8B72F7CB1A9B050ABC6A5316B4040 (int32_t ___channel0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Single>::.ctor()
+inline void List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802 (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, const RuntimeMethod*))List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<System.Single>::Add(T)
+inline void List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, float, const RuntimeMethod*))List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_gshared_inline)(__this, ___item0, method);
+}
+// System.Boolean System.Type::get_IsArray()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Type_get_IsArray_mB9B8CA713B2AA9D6AFECC24E05AF78D22532B673 (Type_t* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Reflection.FieldInfo::get_IsLiteral()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FieldInfo_get_IsLiteral_mBE7DDC6A709439F775873859C82BAAD1EEFF791A (FieldInfo_t* __this, const RuntimeMethod* method) ;
+// System.Boolean AudioHelm.Native::HelmSetParameterValue(System.Int32,System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Native_HelmSetParameterValue_m8BB134990B0FF0A8511A48D305A481A02D6AA01D (int32_t ___channel0, int32_t ___paramIndex1, float ___newValue2, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<AudioHelm.HelmParameter>::get_Item(System.Int32)
+inline HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* (*) (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
+}
+// AudioHelm.Param AudioHelm.HelmParameter::get_parameter()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F_inline (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Single>::get_Item(System.Int32)
+inline float List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50 (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  float (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, int32_t, const RuntimeMethod*))List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_gshared)(__this, ___index0, method);
+}
+// System.Void AudioHelm.HelmController::SetParameterAtIndex(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterAtIndex_m6F3C29CE3F2EAB9CB740FB9763B33D4A82D3D3BC (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___index0, float ___newValue1, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<AudioHelm.HelmParameter>::get_Count()
+inline int32_t List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// System.String System.Int32::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0 (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Void AudioHelm.Native::HelmAddModulation(System.Int32,System.Int32,System.String,System.String,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmAddModulation_m00223BB5B6FFBFF478757B09E65455E518337813 (int32_t ___channel0, int32_t ___index1, String_t* ___source2, String_t* ___dest3, float ___amount4, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmParameter::set_paramValue(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_set_paramValue_mF5C4CFA2DCE8ADFF09E513ED09C20722F73424B6 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, float ___value0, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmParameter::.ctor(AudioHelm.HelmController)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter__ctor_m5B0440CF3D306B6FB55A2CB497BEB67AD3A92B07 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* ___par0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<AudioHelm.HelmParameter>::Add(T)
+inline void List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_inline (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* __this, HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E*, HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Void AudioHelm.HelmParameter::.ctor(AudioHelm.HelmController,AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter__ctor_mD02764D540ED5AD74810E11134C3DA28D3EB3BE9 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* ___par0, int32_t ___param1, const RuntimeMethod* method) ;
+// System.Single AudioHelm.HelmParameter::get_paramValue()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float HelmParameter_get_paramValue_m7C45580002EE8F2BED7D16A0CF5F7A596B4D823D_inline (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<AudioHelm.HelmParameter>::IndexOf(T)
+inline int32_t List_1_IndexOf_m3FB2B8958DCBDCDE974E5685588F0D688ADA1D0F (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* __this, HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* ___item0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E*, HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1*, const RuntimeMethod*))List_1_IndexOf_m378F61BA812B79DEE58D86FE8AA9F20E3FC7D85F_gshared)(__this, ___item0, method);
+}
+// System.Boolean System.Collections.Generic.List`1<AudioHelm.HelmParameter>::Remove(T)
+inline bool List_1_Remove_mC3F15AE26B57F5F59BBF92626E950F85E9B305BF (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* __this, HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* ___item0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E*, HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1*, const RuntimeMethod*))List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared)(__this, ___item0, method);
+}
+// System.Single AudioHelm.Native::HelmGetParameterValue(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_HelmGetParameterValue_m0C78F2E8E773BC5E77DA1AB7B96116D7AC03AA07 (int32_t ___channel0, int32_t ___paramIndex1, const RuntimeMethod* method) ;
+// System.Single AudioHelm.Native::HelmGetParameterPercent(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_HelmGetParameterPercent_mB1BA072AB3C96F7B39EF5ADD5C53F7B27013B17F (int32_t ___channel0, int32_t ___paramIndex1, const RuntimeMethod* method) ;
+// System.Boolean AudioHelm.Native::HelmSetParameterPercent(System.Int32,System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Native_HelmSetParameterPercent_m54709B57A561208508AE9C73A53C38D01F4A635B (int32_t ___channel0, int32_t ___paramIndex1, float ___newPercent2, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController::SetParameterValue(AudioHelm.Param,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterValue_mBEBFDEC33132F2C6CB821ABE7A2D3AFE0A8A1A32 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, float ___newValue1, const RuntimeMethod* method) ;
+// System.Void AudioHelm.Native::HelmAllNotesOff(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmAllNotesOff_m92FA84FD6CB2E32044534A980BACC69D7371AECF (int32_t ___channel0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::Clear()
+inline void Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0 (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, const RuntimeMethod*))Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::Clear()
+inline void Dictionary_2_Clear_mDAB073697D28935E30C9068F1FFD50963C95C03E (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155*, const RuntimeMethod*))Dictionary_2_Clear_mDAB073697D28935E30C9068F1FFD50963C95C03E_gshared)(__this, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::ContainsKey(TKey)
+inline bool Dictionary_2_ContainsKey_m050AC0D9D6F681C25C12FBBC7DD71F926D206ED9 (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, const RuntimeMethod*))Dictionary_2_ContainsKey_m050AC0D9D6F681C25C12FBBC7DD71F926D206ED9_gshared)(__this, ___key0, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::ContainsKey(TKey)
+inline bool Dictionary_2_ContainsKey_m7F9E8F6BBCE7C08FEAC01058D3F1568B4C0D3D47 (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155*, float, const RuntimeMethod*))Dictionary_2_ContainsKey_m7F9E8F6BBCE7C08FEAC01058D3F1568B4C0D3D47_gshared)(__this, ___key0, method);
+}
+// System.Void AudioHelm.HelmController::NoteOn(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_NoteOn_m230A01C1D6CFE56AB30249C275BBBA076595FB29 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, float ___velocity1, const RuntimeMethod* method) ;
+// System.Collections.IEnumerator AudioHelm.HelmController::WaitNoteOff(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HelmController_WaitNoteOff_m9AF308CAF05F52337510FA805456F9B59102D778 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, float ___length1, const RuntimeMethod* method) ;
+// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___routine0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9 (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, int32_t* ___value1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, int32_t ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void AudioHelm.Native::HelmNoteOn(System.Int32,System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmNoteOn_m6E49B7301ACFE7752E51184CD7CCDE08C90BEE6B (int32_t ___channel0, int32_t ___note1, float ___velocity2, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController/<WaitNoteOff>d__48::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitNoteOffU3Ed__48__ctor_m0D8678625E2CA62EDA71169D3BD1A2882290B301 (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::Remove(TKey)
+inline bool Dictionary_2_Remove_m6862124076457E217895F9A6113FEA9756F8CCC5 (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, const RuntimeMethod*))Dictionary_2_Remove_m6862124076457E217895F9A6113FEA9756F8CCC5_gshared)(__this, ___key0, method);
+}
+// System.Void AudioHelm.Native::HelmNoteOff(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmNoteOff_m5A7D1140B1D55AF9527B0C6FBFD4A1155AD6410F (int32_t ___channel0, int32_t ___note1, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController::FrequencyOn(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_FrequencyOn_mFC57E128394137BC3F4CD99EC451FF1C98F4E0B5 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, float ___velocity1, const RuntimeMethod* method) ;
+// System.Collections.IEnumerator AudioHelm.HelmController::WaitFrequencyOff(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HelmController_WaitFrequencyOff_m42B9A64BCC3261F5FEEDE9B0046221DABB95A6FC (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, float ___length1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, int32_t* ___value1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155*, float, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, int32_t ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155*, float, int32_t, const RuntimeMethod*))Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void AudioHelm.Native::HelmFrequencyOn(System.Int32,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmFrequencyOn_m39F1ECDA125F8AA11A73637F54BFAA8C0C2D4BD6 (int32_t ___channel0, float ___frequency1, float ___velocity2, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController/<WaitFrequencyOff>d__52::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitFrequencyOffU3Ed__52__ctor_mF1F8C7665CF5EBD64323A3FA040AC613857E672A (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::Remove(TKey)
+inline bool Dictionary_2_Remove_m8B4BFCF9D864D194958456A4442F27FA218C1503 (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, float ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155*, float, const RuntimeMethod*))Dictionary_2_Remove_m8B4BFCF9D864D194958456A4442F27FA218C1503_gshared)(__this, ___key0, method);
+}
+// System.Void AudioHelm.Native::HelmFrequencyOff(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmFrequencyOff_m2BEE8BB272921E67895D46C2852A9F5802F703D1 (int32_t ___channel0, float ___frequency1, const RuntimeMethod* method) ;
+// System.Void AudioHelm.Native::HelmSetPitchWheel(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmSetPitchWheel_mD7EF4F7F16AF83E4B0753C1AB5FDF863AA8A4ED3 (int32_t ___channel0, float ___value1, const RuntimeMethod* method) ;
+// System.Void AudioHelm.Native::HelmSetModWheel(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmSetModWheel_m52292DD4D5F67BD88ECE05785F419331D0513E3D (int32_t ___channel0, float ___value1, const RuntimeMethod* method) ;
+// System.Void AudioHelm.Native::HelmSetAftertouch(System.Int32,System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmSetAftertouch_mADE51E1EC51FED7AED24667D496EDB52A0008F0C (int32_t ___channel0, int32_t ___note1, float ___value2, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Time::get_timeSinceLevelLoad()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_timeSinceLevelLoad_m0AA090B0D9CF98F4A7E8AE81ABE29459DBE28C9A (const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController::UpdateAllParameters()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_UpdateAllParameters_m5A6CA95A9A3AE64F0E9D3FF4D44885F7341B7BC8 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<AudioHelm.HelmParameter>::.ctor()
+inline void List_1__ctor_m823EDBB00B44A22E7730C64454920F4D657BDF98 (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::.ctor()
+inline void Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, const RuntimeMethod*))Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Single,System.Int32>::.ctor()
+inline void Dictionary_2__ctor_m8CD500CBD91BCD8B5A2B16474BDEE648E67B231F (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155*, const RuntimeMethod*))Dictionary_2__ctor_m8CD500CBD91BCD8B5A2B16474BDEE648E67B231F_gshared)(__this, method);
+}
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___seconds0, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController::NoteOff(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_NoteOff_m1D24440F1914414040EAE6F0C43D24000FD549B5 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, const RuntimeMethod* method) ;
+// System.Void System.NotSupportedException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController::FrequencyOff(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_FrequencyOff_mA8363BB5775FF1B9C1DADE0EAC8D177B1874632D (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmParameter::UpdateMinMax()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_UpdateMinMax_m9D2347642A01C92E657D7F4887B07B4F29A0ACB8 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmParameter::UpdateNative()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_UpdateNative_mC910B8C81B83868DE5024CFF20E1DD4474CC856A (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmParameter::set_parameter(AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_set_parameter_m91BBD895633C82B3223AC63145E78DFEF9D25AEB (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Single AudioHelm.HelmController::GetParameterPercent(AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmController_GetParameterPercent_mE9597AE533196AD484EB399C3BE3338CEE4D184F (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, const RuntimeMethod* method) ;
+// System.Single AudioHelm.HelmController::GetParameterValue(AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmController_GetParameterValue_mE0DEFA47C1758C6548223361284DCFE1C2150CD6 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m18E1885C296CC868AC918101523697CFE6413C79 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___exists0, const RuntimeMethod* method) ;
+// System.Single AudioHelm.Native::HelmGetParameterMinimum(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_HelmGetParameterMinimum_mB5E9A68FC015491B8FA47597B140080EFD16F9CB (int32_t ___index0, const RuntimeMethod* method) ;
+// System.Single AudioHelm.Native::HelmGetParameterMaximum(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_HelmGetParameterMaximum_m278AE3AABBF25939C92FBB22A3DEE816182A9644 (int32_t ___index0, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) ;
+// System.Void AudioHelm.HelmController::SetParameterPercent(AudioHelm.Param,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterPercent_m62BC80539DAA76302C9974805377BDB316BADD87 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, float ___newPercent1, const RuntimeMethod* method) ;
 // System.String System.IO.File::ReadAllText(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* File_ReadAllText_m5635BE83C14358AB1721547180F43103F777CEB5 (String_t* ___path0, const RuntimeMethod* method) ;
 // T UnityEngine.JsonUtility::FromJson<AudioHelm.HelmPatchFormat>(System.String)
@@ -2291,10 +2944,6 @@ inline HelmPatchFormat_tBE0931362551773E035AAE9F1196BCD6214D919D* JsonUtility_Fr
 {
 	return ((  HelmPatchFormat_tBE0931362551773E035AAE9F1196BCD6214D919D* (*) (String_t*, const RuntimeMethod*))JsonUtility_FromJson_TisRuntimeObject_m3A645CB2B6525E4A5835EA8A8CEBD39C7E2C444A_gshared)(___json0, method);
 }
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.String System.String::Replace(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166 (String_t* __this, String_t* ___oldValue0, String_t* ___newValue1, const RuntimeMethod* method) ;
 // System.Int32 System.String::get_Length()
@@ -2353,14 +3002,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Sequencer_OnEnable_m08A2BA92A93C9B61FF56
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_EnableSequencer_m734C2CE8111320AA8F4D8E3F987D70E9A73BB182 (intptr_t ___sequencer0, bool ___enable1, const RuntimeMethod* method) ;
 // System.Void AudioHelm.Sequencer::OnDisable()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Sequencer_OnDisable_m12559A8DC5DC3C319E678D4A3F4708734C0DD5B4 (Sequencer_t8CF9E0ED74B3253FC15BDAF29AD89FD39C5360BD* __this, const RuntimeMethod* method) ;
-// System.Void AudioHelm.Native::HelmAllNotesOff(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmAllNotesOff_m92FA84FD6CB2E32044534A980BACC69D7371AECF (int32_t ___channel0, const RuntimeMethod* method) ;
 // System.Void AudioHelm.Sequencer::AllNotesOff()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Sequencer_AllNotesOff_mB5AF22F1A307A00ABE8C2BE1831F465AA04770CD (Sequencer_t8CF9E0ED74B3253FC15BDAF29AD89FD39C5360BD* __this, const RuntimeMethod* method) ;
-// System.Void AudioHelm.Native::HelmNoteOn(System.Int32,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmNoteOn_m6E49B7301ACFE7752E51184CD7CCDE08C90BEE6B (int32_t ___channel0, int32_t ___note1, float ___velocity2, const RuntimeMethod* method) ;
-// System.Void AudioHelm.Native::HelmNoteOff(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_HelmNoteOff_m5A7D1140B1D55AF9527B0C6FBFD4A1155AD6410F (int32_t ___channel0, int32_t ___note1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Void AudioHelm.Sequencer::UpdateBeatTime()
@@ -2400,8 +3043,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m40506877934EC1AD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Note_FullyNative_mFF64AE6BC3E173C2196A8A3BAE08D3B1740C80B9 (Note_t96CE62C204CCD9CC7B1070C2D04984810A3F0EB5* __this, const RuntimeMethod* method) ;
 // System.IntPtr AudioHelm.Native::ChangeNoteKey(System.IntPtr,System.IntPtr,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Native_ChangeNoteKey_m45AAF08FE8CF44DD22C362D4F7DBC28A1F7182FA (intptr_t ___sequencer0, intptr_t ___note1, int32_t ___key2, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m18E1885C296CC868AC918101523697CFE6413C79 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___exists0, const RuntimeMethod* method) ;
 // System.Void AudioHelm.Sequencer::NotifyNoteKeyChanged(AudioHelm.Note,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Sequencer_NotifyNoteKeyChanged_mA821929C8AF14E638B95EBADFBBB0D995C3C011A (Sequencer_t8CF9E0ED74B3253FC15BDAF29AD89FD39C5360BD* __this, Note_t96CE62C204CCD9CC7B1070C2D04984810A3F0EB5* ___note0, int32_t ___oldKey1, const RuntimeMethod* method) ;
 // System.IntPtr AudioHelm.Native::ChangeNoteStart(System.IntPtr,System.IntPtr,System.Single)
@@ -2629,8 +3270,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Min_m6F49B85AE4935E4AF3AB6128B3B5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_PlayScheduled_m9F3C7245A13A1D4BC64AFA9A08763357133727D9 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, double ___time0, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator AudioHelm.Sampler::TurnVoiceOffInSeconds(System.Int32,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Sampler_TurnVoiceOffInSeconds_mB4C7DB2AEE09FA5581D987967808D8CAE939F0BA (Sampler_tC023C7EE0644B0C484E2DA3F3065CA5A54FACA49* __this, int32_t ___note0, float ___seconds1, const RuntimeMethod* method) ;
-// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___routine0, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<AudioHelm.Sampler/ActiveNote>::GetEnumerator()
 inline Enumerator_t87DE556A6B9E35A6157A2AC83CFFC90DE5DD81EC List_1_GetEnumerator_m11EAFBE3F2AF4F603AE8AA2CA97E0EA01863A172 (List_1_tD666A415E18FD7649AAE78ABA3FE61844D81D4D1* __this, const RuntimeMethod* method)
 {
@@ -2663,10 +3302,6 @@ inline void List_1__ctor_m82ECB5B6520AC90B29D213E11DB27D32F77B556E (List_1_tD666
 {
 	((  void (*) (List_1_tD666A415E18FD7649AAE78ABA3FE61844D81D4D1*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
-// System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___seconds0, const RuntimeMethod* method) ;
-// System.Void System.NotSupportedException::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Single AudioHelm.Sequencer::GetSixteenthTime()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Sequencer_GetSixteenthTime_m955CDE8129C67AD1B50D6594F9DD5439B83E629E (Sequencer_t8CF9E0ED74B3253FC15BDAF29AD89FD39C5360BD* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<AudioHelm.Sampler>()
@@ -2878,8 +3513,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isPlaying_m0B3B501E10937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_mE10C3436BA703E4D9D41B3F8F365E4C34F9926EF (RuntimeArray* ___array0, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___fldHandle1, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mD921B23F47F5347996C56DC789D1DE16EE27D9B1_inline (float ___value0, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) ;
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m48B57EC27CADC3463CA98A33373D557DA587FF1B (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_AudioPluginHelm_INTERNAL
@@ -2986,6 +3619,2287 @@ IL2CPP_EXTERN_C void DEFAULT_CALL SetBeatTime(double);
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_AudioPluginHelm_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Pause(int32_t);
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void AudioHelm.HelmAudioReceive::OnAudioFilterRead(System.Single[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmAudioReceive_OnAudioFilterRead_mE68B5D0C46C5430D70BEA5DB6945249183E7FC57 (HelmAudioReceive_t5A6911E6B0D4CB81803E0E1CFA39B1645A4019FC* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___data0, int32_t ___audioChannels1, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmGetBufferData(channel, data, data.Length / audioChannels, audioChannels);
+		int32_t L_0 = __this->___channel_4;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___data0;
+		NullCheck(L_2);
+		int32_t L_3 = ___audioChannels1;
+		int32_t L_4 = ___audioChannels1;
+		bool L_5;
+		L_5 = Native_HelmGetBufferData_m0F86D424D623B7563253A4C391540BE8E01673DC(L_0, L_1, ((int32_t)(((int32_t)(((RuntimeArray*)L_2)->max_length))/L_3)), L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmAudioReceive::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmAudioReceive__ctor_mBC2D5ACC523904C1EC591629041C096B298B1D55 (HelmAudioReceive_t5A6911E6B0D4CB81803E0E1CFA39B1645A4019FC* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void AudioHelm.HelmController::OnDestroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_OnDestroy_m8A9DE99FC98F9DD4428DCE6EFB914666AD96E534 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	{
+		// AllNotesOff();
+		HelmController_AllNotesOff_m2EC92BD01883DB7D806555210EF985A61C33A2B0(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_Awake_m6169A4F9D74DF4C66914E430E746B7FA16FE5EDB (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	{
+		// AllNotesOff();
+		HelmController_AllNotesOff_m2EC92BD01883DB7D806555210EF985A61C33A2B0(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_Start_m849652FA6965F4C109275829C2BF506D8CF8BC53 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Utils_tDAD97EEEE6E24993B53FA93C6A655156617B6370_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Utils.InitAudioSource(GetComponent<AudioSource>());
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_0;
+		L_0 = Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B(__this, Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Utils_tDAD97EEEE6E24993B53FA93C6A655156617B6370_il2cpp_TypeInfo_var);
+		Utils_InitAudioSource_m6BA81BE8F035296C90D480535476CA8BC7B4DC7E(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::LoadPatch(AudioHelm.HelmPatch)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_LoadPatch_m272DB9D347550DCFF3CEB6EED2BD2E265AA415F0 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, HelmPatch_t10167C36E80A27280B2B3A71BCF27E1AEFFF4D04* ___patch0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HelmPatchSettings_t716C53C6A4F7D6D8D21BE8BFE1281261E7850B97_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral32CB56FB631F837466F4B598C1B0C81DD1ACB6B2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCD518A212830785B62EB94740CE4D6563B7DBD1F);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* V_3 = NULL;
+	int32_t V_4 = 0;
+	FieldInfo_t* V_5 = NULL;
+	float V_6 = 0.0f;
+	int32_t V_7 = 0;
+	HelmModulationSettingU5BU5D_tF8A62F76FE080A933043718AED2BB44C7A519A8A* V_8 = NULL;
+	HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* V_9 = NULL;
+	int32_t V_10 = 0;
+	{
+		// FieldInfo[] fields = typeof(HelmPatchSettings).GetFields();
+		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (HelmPatchSettings_t716C53C6A4F7D6D8D21BE8BFE1281261E7850B97_0_0_0_var) };
+		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
+		Type_t* L_1;
+		L_1 = Type_GetTypeFromHandle_m2570A2A5B32A5E9D9F0F38B37459DA18736C823E(L_0, NULL);
+		NullCheck(L_1);
+		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_2;
+		L_2 = Type_GetFields_mC0570FF1986A6D93FA7976303B44B2FF8D0BC77F(L_1, NULL);
+		// Native.HelmClearModulations(channel);
+		int32_t L_3 = __this->___channel_6;
+		Native_HelmClearModulations_mDF9D25C09DF8B72F7CB1A9B050ABC6A5316B4040(L_3, NULL);
+		// List<float> values = new List<float>();
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_4 = (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*)il2cpp_codegen_object_new(List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802(L_4, List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var);
+		V_0 = L_4;
+		// values.Add(0.0f);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_5 = V_0;
+		NullCheck(L_5);
+		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_5, (0.0f), List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		// int index = 1;
+		V_1 = 1;
+		// foreach (FieldInfo field in fields)
+		V_3 = L_2;
+		V_4 = 0;
+		goto IL_008a;
+	}
+
+IL_0033:
+	{
+		// foreach (FieldInfo field in fields)
+		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_6 = V_3;
+		int32_t L_7 = V_4;
+		NullCheck(L_6);
+		int32_t L_8 = L_7;
+		FieldInfo_t* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		V_5 = L_9;
+		// if (!field.FieldType.IsArray && !field.IsLiteral)
+		FieldInfo_t* L_10 = V_5;
+		NullCheck(L_10);
+		Type_t* L_11;
+		L_11 = VirtualFuncInvoker0< Type_t* >::Invoke(16 /* System.Type System.Reflection.FieldInfo::get_FieldType() */, L_10);
+		NullCheck(L_11);
+		bool L_12;
+		L_12 = Type_get_IsArray_mB9B8CA713B2AA9D6AFECC24E05AF78D22532B673(L_11, NULL);
+		if (L_12)
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		FieldInfo_t* L_13 = V_5;
+		NullCheck(L_13);
+		bool L_14;
+		L_14 = FieldInfo_get_IsLiteral_mBE7DDC6A709439F775873859C82BAAD1EEFF791A(L_13, NULL);
+		if (L_14)
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		// float val = (float)field.GetValue(patch.patchData.settings);
+		FieldInfo_t* L_15 = V_5;
+		HelmPatch_t10167C36E80A27280B2B3A71BCF27E1AEFFF4D04* L_16 = ___patch0;
+		NullCheck(L_16);
+		HelmPatchFormat_tBE0931362551773E035AAE9F1196BCD6214D919D* L_17 = L_16->___patchData_5;
+		NullCheck(L_17);
+		HelmPatchSettings_t716C53C6A4F7D6D8D21BE8BFE1281261E7850B97* L_18 = L_17->___settings_5;
+		NullCheck(L_15);
+		RuntimeObject* L_19;
+		L_19 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_15, L_18);
+		V_6 = ((*(float*)((float*)(float*)UnBox(L_19, Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var))));
+		// Native.HelmSetParameterValue(channel, index, val);
+		int32_t L_20 = __this->___channel_6;
+		int32_t L_21 = V_1;
+		float L_22 = V_6;
+		bool L_23;
+		L_23 = Native_HelmSetParameterValue_m8BB134990B0FF0A8511A48D305A481A02D6AA01D(L_20, L_21, L_22, NULL);
+		// values.Add(val);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_24 = V_0;
+		float L_25 = V_6;
+		NullCheck(L_24);
+		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_24, L_25, List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		// index++;
+		int32_t L_26 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_26, 1));
+	}
+
+IL_0084:
+	{
+		int32_t L_27 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_27, 1));
+	}
+
+IL_008a:
+	{
+		// foreach (FieldInfo field in fields)
+		int32_t L_28 = V_4;
+		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_29 = V_3;
+		NullCheck(L_29);
+		if ((((int32_t)L_28) < ((int32_t)((int32_t)(((RuntimeArray*)L_29)->max_length)))))
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		// for (int i = 0; i < synthParameters.Count; ++i)
+		V_7 = 0;
+		goto IL_00bc;
+	}
+
+IL_0096:
+	{
+		// SetParameterAtIndex(i, values[(int)synthParameters[i].parameter]);
+		int32_t L_30 = V_7;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_31 = V_0;
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_32 = __this->___synthParameters_23;
+		int32_t L_33 = V_7;
+		NullCheck(L_32);
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_34;
+		L_34 = List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B(L_32, L_33, List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B_RuntimeMethod_var);
+		NullCheck(L_34);
+		int32_t L_35;
+		L_35 = HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F_inline(L_34, NULL);
+		NullCheck(L_31);
+		float L_36;
+		L_36 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_31, L_35, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		HelmController_SetParameterAtIndex_m6F3C29CE3F2EAB9CB740FB9763B33D4A82D3D3BC(__this, L_30, L_36, NULL);
+		// for (int i = 0; i < synthParameters.Count; ++i)
+		int32_t L_37 = V_7;
+		V_7 = ((int32_t)il2cpp_codegen_add(L_37, 1));
+	}
+
+IL_00bc:
+	{
+		// for (int i = 0; i < synthParameters.Count; ++i)
+		int32_t L_38 = V_7;
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_39 = __this->___synthParameters_23;
+		NullCheck(L_39);
+		int32_t L_40;
+		L_40 = List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline(L_39, List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		if ((((int32_t)L_38) < ((int32_t)L_40)))
+		{
+			goto IL_0096;
+		}
+	}
+	{
+		// int modulationIndex = 0;
+		V_2 = 0;
+		// foreach (HelmModulationSetting modulation in patch.patchData.settings.modulations)
+		HelmPatch_t10167C36E80A27280B2B3A71BCF27E1AEFFF4D04* L_41 = ___patch0;
+		NullCheck(L_41);
+		HelmPatchFormat_tBE0931362551773E035AAE9F1196BCD6214D919D* L_42 = L_41->___patchData_5;
+		NullCheck(L_42);
+		HelmPatchSettings_t716C53C6A4F7D6D8D21BE8BFE1281261E7850B97* L_43 = L_42->___settings_5;
+		NullCheck(L_43);
+		HelmModulationSettingU5BU5D_tF8A62F76FE080A933043718AED2BB44C7A519A8A* L_44 = L_43->___modulations_147;
+		V_8 = L_44;
+		V_4 = 0;
+		goto IL_013b;
+	}
+
+IL_00e4:
+	{
+		// foreach (HelmModulationSetting modulation in patch.patchData.settings.modulations)
+		HelmModulationSettingU5BU5D_tF8A62F76FE080A933043718AED2BB44C7A519A8A* L_45 = V_8;
+		int32_t L_46 = V_4;
+		NullCheck(L_45);
+		int32_t L_47 = L_46;
+		HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* L_48 = (L_45)->GetAt(static_cast<il2cpp_array_size_t>(L_47));
+		V_9 = L_48;
+		// if (modulationIndex >= HelmPatchSettings.kMaxModulations)
+		int32_t L_49 = V_2;
+		if ((((int32_t)L_49) < ((int32_t)((int32_t)16))))
+		{
+			goto IL_0110;
+		}
+	}
+	{
+		// Debug.LogWarning("Only " + HelmPatchSettings.kMaxModulations +
+		//                  " modulations are currently supported in the Helm Unity plugin.");
+		V_10 = ((int32_t)16);
+		String_t* L_50;
+		L_50 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_10), NULL);
+		String_t* L_51;
+		L_51 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(_stringLiteral32CB56FB631F837466F4B598C1B0C81DD1ACB6B2, L_50, _stringLiteralCD518A212830785B62EB94740CE4D6563B7DBD1F, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28(L_51, NULL);
+		// break;
+		return;
+	}
+
+IL_0110:
+	{
+		// Native.HelmAddModulation(channel, modulationIndex,
+		//                          modulation.source, modulation.destination, modulation.amount);
+		int32_t L_52 = __this->___channel_6;
+		int32_t L_53 = V_2;
+		HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* L_54 = V_9;
+		NullCheck(L_54);
+		String_t* L_55 = L_54->___source_0;
+		HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* L_56 = V_9;
+		NullCheck(L_56);
+		String_t* L_57 = L_56->___destination_1;
+		HelmModulationSetting_tF8EE450B5D030B0625AF7A2FD4586C061BDE7FA0* L_58 = V_9;
+		NullCheck(L_58);
+		float L_59 = L_58->___amount_2;
+		Native_HelmAddModulation_m00223BB5B6FFBFF478757B09E65455E518337813(L_52, L_53, L_55, L_57, L_59, NULL);
+		// modulationIndex++;
+		int32_t L_60 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_60, 1));
+		int32_t L_61 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_61, 1));
+	}
+
+IL_013b:
+	{
+		// foreach (HelmModulationSetting modulation in patch.patchData.settings.modulations)
+		int32_t L_62 = V_4;
+		HelmModulationSettingU5BU5D_tF8A62F76FE080A933043718AED2BB44C7A519A8A* L_63 = V_8;
+		NullCheck(L_63);
+		if ((((int32_t)L_62) < ((int32_t)((int32_t)(((RuntimeArray*)L_63)->max_length)))))
+		{
+			goto IL_00e4;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Single AudioHelm.HelmController::GetParameterAtIndex(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmController_GetParameterAtIndex_m9B912D5B92C5990D5DD177C70E1512EB8F9B9D6E (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (index >= synthParameters.Count)
+		int32_t L_0 = ___index0;
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_1 = __this->___synthParameters_23;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline(L_1, List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		if ((((int32_t)L_0) < ((int32_t)L_2)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// return 0.0f;
+		return (0.0f);
+	}
+
+IL_0014:
+	{
+		int32_t L_3 = ___index0;
+		switch (L_3)
+		{
+			case 0:
+			{
+				goto IL_005c;
+			}
+			case 1:
+			{
+				goto IL_0063;
+			}
+			case 2:
+			{
+				goto IL_006a;
+			}
+			case 3:
+			{
+				goto IL_0071;
+			}
+			case 4:
+			{
+				goto IL_0078;
+			}
+			case 5:
+			{
+				goto IL_007f;
+			}
+			case 6:
+			{
+				goto IL_0086;
+			}
+			case 7:
+			{
+				goto IL_008d;
+			}
+			case 8:
+			{
+				goto IL_0094;
+			}
+			case 9:
+			{
+				goto IL_009b;
+			}
+			case 10:
+			{
+				goto IL_00a2;
+			}
+			case 11:
+			{
+				goto IL_00a9;
+			}
+			case 12:
+			{
+				goto IL_00b0;
+			}
+			case 13:
+			{
+				goto IL_00b7;
+			}
+			case 14:
+			{
+				goto IL_00be;
+			}
+			case 15:
+			{
+				goto IL_00c5;
+			}
+		}
+	}
+	{
+		goto IL_00cc;
+	}
+
+IL_005c:
+	{
+		// case 0: return synthParamValue0;
+		float L_4 = __this->___synthParamValue0_7;
+		return L_4;
+	}
+
+IL_0063:
+	{
+		// case 1: return synthParamValue1;
+		float L_5 = __this->___synthParamValue1_8;
+		return L_5;
+	}
+
+IL_006a:
+	{
+		// case 2: return synthParamValue2;
+		float L_6 = __this->___synthParamValue2_9;
+		return L_6;
+	}
+
+IL_0071:
+	{
+		// case 3: return synthParamValue3;
+		float L_7 = __this->___synthParamValue3_10;
+		return L_7;
+	}
+
+IL_0078:
+	{
+		// case 4: return synthParamValue4;
+		float L_8 = __this->___synthParamValue4_11;
+		return L_8;
+	}
+
+IL_007f:
+	{
+		// case 5: return synthParamValue5;
+		float L_9 = __this->___synthParamValue5_12;
+		return L_9;
+	}
+
+IL_0086:
+	{
+		// case 6: return synthParamValue6;
+		float L_10 = __this->___synthParamValue6_13;
+		return L_10;
+	}
+
+IL_008d:
+	{
+		// case 7: return synthParamValue7;
+		float L_11 = __this->___synthParamValue7_14;
+		return L_11;
+	}
+
+IL_0094:
+	{
+		// case 8: return synthParamValue8;
+		float L_12 = __this->___synthParamValue8_15;
+		return L_12;
+	}
+
+IL_009b:
+	{
+		// case 9: return synthParamValue9;
+		float L_13 = __this->___synthParamValue9_16;
+		return L_13;
+	}
+
+IL_00a2:
+	{
+		// case 10: return synthParamValue10;
+		float L_14 = __this->___synthParamValue10_17;
+		return L_14;
+	}
+
+IL_00a9:
+	{
+		// case 11: return synthParamValue11;
+		float L_15 = __this->___synthParamValue11_18;
+		return L_15;
+	}
+
+IL_00b0:
+	{
+		// case 12: return synthParamValue12;
+		float L_16 = __this->___synthParamValue12_19;
+		return L_16;
+	}
+
+IL_00b7:
+	{
+		// case 13: return synthParamValue13;
+		float L_17 = __this->___synthParamValue13_20;
+		return L_17;
+	}
+
+IL_00be:
+	{
+		// case 14: return synthParamValue14;
+		float L_18 = __this->___synthParamValue14_21;
+		return L_18;
+	}
+
+IL_00c5:
+	{
+		// case 15: return synthParamValue15;
+		float L_19 = __this->___synthParamValue15_22;
+		return L_19;
+	}
+
+IL_00cc:
+	{
+		// default: return 0.0f;
+		return (0.0f);
+	}
+}
+// System.Void AudioHelm.HelmController::SetParameterAtIndex(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterAtIndex_m6F3C29CE3F2EAB9CB740FB9763B33D4A82D3D3BC (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___index0, float ___newValue1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (index >= synthParameters.Count)
+		int32_t L_0 = ___index0;
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_1 = __this->___synthParameters_23;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline(L_1, List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		if ((((int32_t)L_0) < ((int32_t)L_2)))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		int32_t L_3 = ___index0;
+		switch (L_3)
+		{
+			case 0:
+			{
+				goto IL_0056;
+			}
+			case 1:
+			{
+				goto IL_005e;
+			}
+			case 2:
+			{
+				goto IL_0066;
+			}
+			case 3:
+			{
+				goto IL_006e;
+			}
+			case 4:
+			{
+				goto IL_0076;
+			}
+			case 5:
+			{
+				goto IL_007e;
+			}
+			case 6:
+			{
+				goto IL_0086;
+			}
+			case 7:
+			{
+				goto IL_008e;
+			}
+			case 8:
+			{
+				goto IL_0096;
+			}
+			case 9:
+			{
+				goto IL_009e;
+			}
+			case 10:
+			{
+				goto IL_00a6;
+			}
+			case 11:
+			{
+				goto IL_00ae;
+			}
+			case 12:
+			{
+				goto IL_00b6;
+			}
+			case 13:
+			{
+				goto IL_00be;
+			}
+			case 14:
+			{
+				goto IL_00c6;
+			}
+			case 15:
+			{
+				goto IL_00ce;
+			}
+		}
+	}
+	{
+		return;
+	}
+
+IL_0056:
+	{
+		// case 0: synthParamValue0 = newValue; break;
+		float L_4 = ___newValue1;
+		__this->___synthParamValue0_7 = L_4;
+		// case 0: synthParamValue0 = newValue; break;
+		return;
+	}
+
+IL_005e:
+	{
+		// case 1: synthParamValue1 = newValue; break;
+		float L_5 = ___newValue1;
+		__this->___synthParamValue1_8 = L_5;
+		// case 1: synthParamValue1 = newValue; break;
+		return;
+	}
+
+IL_0066:
+	{
+		// case 2: synthParamValue2 = newValue; break;
+		float L_6 = ___newValue1;
+		__this->___synthParamValue2_9 = L_6;
+		// case 2: synthParamValue2 = newValue; break;
+		return;
+	}
+
+IL_006e:
+	{
+		// case 3: synthParamValue3 = newValue; break;
+		float L_7 = ___newValue1;
+		__this->___synthParamValue3_10 = L_7;
+		// case 3: synthParamValue3 = newValue; break;
+		return;
+	}
+
+IL_0076:
+	{
+		// case 4: synthParamValue4 = newValue; break;
+		float L_8 = ___newValue1;
+		__this->___synthParamValue4_11 = L_8;
+		// case 4: synthParamValue4 = newValue; break;
+		return;
+	}
+
+IL_007e:
+	{
+		// case 5: synthParamValue5 = newValue; break;
+		float L_9 = ___newValue1;
+		__this->___synthParamValue5_12 = L_9;
+		// case 5: synthParamValue5 = newValue; break;
+		return;
+	}
+
+IL_0086:
+	{
+		// case 6: synthParamValue6 = newValue; break;
+		float L_10 = ___newValue1;
+		__this->___synthParamValue6_13 = L_10;
+		// case 6: synthParamValue6 = newValue; break;
+		return;
+	}
+
+IL_008e:
+	{
+		// case 7: synthParamValue7 = newValue; break;
+		float L_11 = ___newValue1;
+		__this->___synthParamValue7_14 = L_11;
+		// case 7: synthParamValue7 = newValue; break;
+		return;
+	}
+
+IL_0096:
+	{
+		// case 8: synthParamValue8 = newValue; break;
+		float L_12 = ___newValue1;
+		__this->___synthParamValue8_15 = L_12;
+		// case 8: synthParamValue8 = newValue; break;
+		return;
+	}
+
+IL_009e:
+	{
+		// case 9: synthParamValue9 = newValue; break;
+		float L_13 = ___newValue1;
+		__this->___synthParamValue9_16 = L_13;
+		// case 9: synthParamValue9 = newValue; break;
+		return;
+	}
+
+IL_00a6:
+	{
+		// case 10: synthParamValue10 = newValue; break;
+		float L_14 = ___newValue1;
+		__this->___synthParamValue10_17 = L_14;
+		// case 10: synthParamValue10 = newValue; break;
+		return;
+	}
+
+IL_00ae:
+	{
+		// case 11: synthParamValue11 = newValue; break;
+		float L_15 = ___newValue1;
+		__this->___synthParamValue11_18 = L_15;
+		// case 11: synthParamValue11 = newValue; break;
+		return;
+	}
+
+IL_00b6:
+	{
+		// case 12: synthParamValue12 = newValue; break;
+		float L_16 = ___newValue1;
+		__this->___synthParamValue12_19 = L_16;
+		// case 12: synthParamValue12 = newValue; break;
+		return;
+	}
+
+IL_00be:
+	{
+		// case 13: synthParamValue13 = newValue; break;
+		float L_17 = ___newValue1;
+		__this->___synthParamValue13_20 = L_17;
+		// case 13: synthParamValue13 = newValue; break;
+		return;
+	}
+
+IL_00c6:
+	{
+		// case 14: synthParamValue14 = newValue; break;
+		float L_18 = ___newValue1;
+		__this->___synthParamValue14_21 = L_18;
+		// case 14: synthParamValue14 = newValue; break;
+		return;
+	}
+
+IL_00ce:
+	{
+		// case 15: synthParamValue15 = newValue; break;
+		float L_19 = ___newValue1;
+		__this->___synthParamValue15_22 = L_19;
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::UpdateAllParameters()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_UpdateAllParameters_m5A6CA95A9A3AE64F0E9D3FF4D44885F7341B7BC8 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		// float[] paramValues =
+		// {
+		//     synthParamValue0, synthParamValue1, synthParamValue2, synthParamValue3,
+		//     synthParamValue4, synthParamValue5, synthParamValue6, synthParamValue7,
+		//     synthParamValue8, synthParamValue9, synthParamValue10, synthParamValue11,
+		//     synthParamValue12, synthParamValue13, synthParamValue14, synthParamValue15
+		// };
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)16));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = L_0;
+		float L_2 = __this->___synthParamValue0_7;
+		NullCheck(L_1);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)L_2);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = L_1;
+		float L_4 = __this->___synthParamValue1_8;
+		NullCheck(L_3);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (float)L_4);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = L_3;
+		float L_6 = __this->___synthParamValue2_9;
+		NullCheck(L_5);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)L_6);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_7 = L_5;
+		float L_8 = __this->___synthParamValue3_10;
+		NullCheck(L_7);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(3), (float)L_8);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_9 = L_7;
+		float L_10 = __this->___synthParamValue4_11;
+		NullCheck(L_9);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(4), (float)L_10);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_11 = L_9;
+		float L_12 = __this->___synthParamValue5_12;
+		NullCheck(L_11);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(5), (float)L_12);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_13 = L_11;
+		float L_14 = __this->___synthParamValue6_13;
+		NullCheck(L_13);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(6), (float)L_14);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_15 = L_13;
+		float L_16 = __this->___synthParamValue7_14;
+		NullCheck(L_15);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(7), (float)L_16);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_17 = L_15;
+		float L_18 = __this->___synthParamValue8_15;
+		NullCheck(L_17);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(8), (float)L_18);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_19 = L_17;
+		float L_20 = __this->___synthParamValue9_16;
+		NullCheck(L_19);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (float)L_20);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_21 = L_19;
+		float L_22 = __this->___synthParamValue10_17;
+		NullCheck(L_21);
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (float)L_22);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_23 = L_21;
+		float L_24 = __this->___synthParamValue11_18;
+		NullCheck(L_23);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (float)L_24);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_25 = L_23;
+		float L_26 = __this->___synthParamValue12_19;
+		NullCheck(L_25);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (float)L_26);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_27 = L_25;
+		float L_28 = __this->___synthParamValue13_20;
+		NullCheck(L_27);
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (float)L_28);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_29 = L_27;
+		float L_30 = __this->___synthParamValue14_21;
+		NullCheck(L_29);
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (float)L_30);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_31 = L_29;
+		float L_32 = __this->___synthParamValue15_22;
+		NullCheck(L_31);
+		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (float)L_32);
+		V_0 = L_31;
+		// for (int i = 0; i < synthParameters.Count; ++i)
+		V_1 = 0;
+		goto IL_00bb;
+	}
+
+IL_00a3:
+	{
+		// synthParameters[i].paramValue = paramValues[i];
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_33 = __this->___synthParameters_23;
+		int32_t L_34 = V_1;
+		NullCheck(L_33);
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_35;
+		L_35 = List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B(L_33, L_34, List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B_RuntimeMethod_var);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_36 = V_0;
+		int32_t L_37 = V_1;
+		NullCheck(L_36);
+		int32_t L_38 = L_37;
+		float L_39 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
+		NullCheck(L_35);
+		HelmParameter_set_paramValue_mF5C4CFA2DCE8ADFF09E513ED09C20722F73424B6(L_35, L_39, NULL);
+		// for (int i = 0; i < synthParameters.Count; ++i)
+		int32_t L_40 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_40, 1));
+	}
+
+IL_00bb:
+	{
+		// for (int i = 0; i < synthParameters.Count; ++i)
+		int32_t L_41 = V_1;
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_42 = __this->___synthParameters_23;
+		NullCheck(L_42);
+		int32_t L_43;
+		L_43 = List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline(L_42, List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		if ((((int32_t)L_41) < ((int32_t)L_43)))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::UpdateParameter(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_UpdateParameter_m58BEDC1CCAF4775F34D8B888CFA607B5E5D8E770 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
+	{
+		// if (index >= synthParameters.Count || index < 0)
+		int32_t L_0 = ___index0;
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_1 = __this->___synthParameters_23;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline(L_1, List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		if ((((int32_t)L_0) >= ((int32_t)L_2)))
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		int32_t L_3 = ___index0;
+		if ((((int32_t)L_3) >= ((int32_t)0)))
+		{
+			goto IL_0013;
+		}
+	}
+
+IL_0012:
+	{
+		// return;
+		return;
+	}
+
+IL_0013:
+	{
+		// float[] paramValues =
+		// {
+		//     synthParamValue0, synthParamValue1, synthParamValue2, synthParamValue3,
+		//     synthParamValue4, synthParamValue5, synthParamValue6, synthParamValue7,
+		//     synthParamValue8, synthParamValue9, synthParamValue10, synthParamValue11,
+		//     synthParamValue12, synthParamValue13, synthParamValue14, synthParamValue15
+		// };
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)16));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = L_4;
+		float L_6 = __this->___synthParamValue0_7;
+		NullCheck(L_5);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)L_6);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_7 = L_5;
+		float L_8 = __this->___synthParamValue1_8;
+		NullCheck(L_7);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(1), (float)L_8);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_9 = L_7;
+		float L_10 = __this->___synthParamValue2_9;
+		NullCheck(L_9);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)L_10);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_11 = L_9;
+		float L_12 = __this->___synthParamValue3_10;
+		NullCheck(L_11);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(3), (float)L_12);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_13 = L_11;
+		float L_14 = __this->___synthParamValue4_11;
+		NullCheck(L_13);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(4), (float)L_14);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_15 = L_13;
+		float L_16 = __this->___synthParamValue5_12;
+		NullCheck(L_15);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(5), (float)L_16);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_17 = L_15;
+		float L_18 = __this->___synthParamValue6_13;
+		NullCheck(L_17);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(6), (float)L_18);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_19 = L_17;
+		float L_20 = __this->___synthParamValue7_14;
+		NullCheck(L_19);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(7), (float)L_20);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_21 = L_19;
+		float L_22 = __this->___synthParamValue8_15;
+		NullCheck(L_21);
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(8), (float)L_22);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_23 = L_21;
+		float L_24 = __this->___synthParamValue9_16;
+		NullCheck(L_23);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (float)L_24);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_25 = L_23;
+		float L_26 = __this->___synthParamValue10_17;
+		NullCheck(L_25);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (float)L_26);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_27 = L_25;
+		float L_28 = __this->___synthParamValue11_18;
+		NullCheck(L_27);
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (float)L_28);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_29 = L_27;
+		float L_30 = __this->___synthParamValue12_19;
+		NullCheck(L_29);
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (float)L_30);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_31 = L_29;
+		float L_32 = __this->___synthParamValue13_20;
+		NullCheck(L_31);
+		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (float)L_32);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_33 = L_31;
+		float L_34 = __this->___synthParamValue14_21;
+		NullCheck(L_33);
+		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (float)L_34);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_35 = L_33;
+		float L_36 = __this->___synthParamValue15_22;
+		NullCheck(L_35);
+		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (float)L_36);
+		V_0 = L_35;
+		// synthParameters[index].paramValue = paramValues[index];
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_37 = __this->___synthParameters_23;
+		int32_t L_38 = ___index0;
+		NullCheck(L_37);
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_39;
+		L_39 = List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B(L_37, L_38, List_1_get_Item_mFBC717DC69455BCC66DB2582B2DDD7C8E741B04B_RuntimeMethod_var);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_40 = V_0;
+		int32_t L_41 = ___index0;
+		NullCheck(L_40);
+		int32_t L_42 = L_41;
+		float L_43 = (L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_42));
+		NullCheck(L_39);
+		HelmParameter_set_paramValue_mF5C4CFA2DCE8ADFF09E513ED09C20722F73424B6(L_39, L_43, NULL);
+		// }
+		return;
+	}
+}
+// AudioHelm.HelmParameter AudioHelm.HelmController::AddEmptyParameter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* HelmController_AddEmptyParameter_m9024E17529959C89CC588BF56A8C690DE7D0E7C7 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* V_0 = NULL;
+	{
+		// if (synthParameters.Count >= MAX_PARAMETERS)
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_0 = __this->___synthParameters_23;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline(L_0, List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		if ((((int32_t)L_1) < ((int32_t)((int32_t)16))))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// return null;
+		return (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1*)NULL;
+	}
+
+IL_0011:
+	{
+		// HelmParameter synthParameter = new HelmParameter(this);
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_2 = (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1*)il2cpp_codegen_object_new(HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		HelmParameter__ctor_m5B0440CF3D306B6FB55A2CB497BEB67AD3A92B07(L_2, __this, NULL);
+		V_0 = L_2;
+		// synthParameters.Add(synthParameter);
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_3 = __this->___synthParameters_23;
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_4 = V_0;
+		NullCheck(L_3);
+		List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_inline(L_3, L_4, List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_RuntimeMethod_var);
+		// return synthParameter;
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_5 = V_0;
+		return L_5;
+	}
+}
+// AudioHelm.HelmParameter AudioHelm.HelmController::AddParameter(AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* HelmController_AddParameter_mFC02EC6D63BB526C0E23A75DEB2FFAD0A04EF045 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* V_0 = NULL;
+	{
+		// HelmParameter synthParameter = new HelmParameter(this, parameter);
+		int32_t L_0 = ___parameter0;
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_1 = (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1*)il2cpp_codegen_object_new(HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		HelmParameter__ctor_mD02764D540ED5AD74810E11134C3DA28D3EB3BE9(L_1, __this, L_0, NULL);
+		V_0 = L_1;
+		// SetParameterAtIndex(synthParameters.Count, synthParameter.paramValue);
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_2 = __this->___synthParameters_23;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_inline(L_2, List_1_get_Count_m6B1AC56D8ED76C7982C2E0700F590577730B616D_RuntimeMethod_var);
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_4 = V_0;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = HelmParameter_get_paramValue_m7C45580002EE8F2BED7D16A0CF5F7A596B4D823D_inline(L_4, NULL);
+		HelmController_SetParameterAtIndex_m6F3C29CE3F2EAB9CB740FB9763B33D4A82D3D3BC(__this, L_3, L_5, NULL);
+		// synthParameters.Add(synthParameter);
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_6 = __this->___synthParameters_23;
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_7 = V_0;
+		NullCheck(L_6);
+		List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_inline(L_6, L_7, List_1_Add_m6334BB8610729D4B3A3945624B3E92C736FB69F7_RuntimeMethod_var);
+		// return synthParameter;
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_8 = V_0;
+		return L_8;
+	}
+}
+// System.Int32 AudioHelm.HelmController::RemoveParameter(AudioHelm.HelmParameter)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HelmController_RemoveParameter_m40C06DBAD0DA70E37FC608F9C9B74A77277AD8AF (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* ___parameter0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_IndexOf_m3FB2B8958DCBDCDE974E5685588F0D688ADA1D0F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Remove_mC3F15AE26B57F5F59BBF92626E950F85E9B305BF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// int indexOf = synthParameters.IndexOf(parameter);
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_0 = __this->___synthParameters_23;
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_1 = ___parameter0;
+		NullCheck(L_0);
+		int32_t L_2;
+		L_2 = List_1_IndexOf_m3FB2B8958DCBDCDE974E5685588F0D688ADA1D0F(L_0, L_1, List_1_IndexOf_m3FB2B8958DCBDCDE974E5685588F0D688ADA1D0F_RuntimeMethod_var);
+		// synthParameters.Remove(parameter);
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_3 = __this->___synthParameters_23;
+		HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* L_4 = ___parameter0;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = List_1_Remove_mC3F15AE26B57F5F59BBF92626E950F85E9B305BF(L_3, L_4, List_1_Remove_mC3F15AE26B57F5F59BBF92626E950F85E9B305BF_RuntimeMethod_var);
+		// return indexOf;
+		return L_2;
+	}
+}
+// System.Single AudioHelm.HelmController::GetParameterValue(AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmController_GetParameterValue_mE0DEFA47C1758C6548223361284DCFE1C2150CD6 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, const RuntimeMethod* method) 
+{
+	{
+		// return Native.HelmGetParameterValue(channel, (int)parameter);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2;
+		L_2 = Native_HelmGetParameterValue_m0C78F2E8E773BC5E77DA1AB7B96116D7AC03AA07(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Void AudioHelm.HelmController::SetParameterValue(AudioHelm.Param,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterValue_mBEBFDEC33132F2C6CB821ABE7A2D3AFE0A8A1A32 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, float ___newValue1, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmSetParameterValue(channel, (int)parameter, newValue);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2 = ___newValue1;
+		bool L_3;
+		L_3 = Native_HelmSetParameterValue_m8BB134990B0FF0A8511A48D305A481A02D6AA01D(L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Single AudioHelm.HelmController::GetParameterValue(AudioHelm.CommonParam)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmController_GetParameterValue_m8448967A204E64F7E1C856F0D9A195543C6C3427 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, const RuntimeMethod* method) 
+{
+	{
+		// return Native.HelmGetParameterPercent(channel, (int)parameter);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2;
+		L_2 = Native_HelmGetParameterPercent_mB1BA072AB3C96F7B39EF5ADD5C53F7B27013B17F(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Void AudioHelm.HelmController::SetParameterValue(AudioHelm.CommonParam,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterValue_m444B59C0297ED3BFCEA42C4835373B921E0961BA (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, float ___newValue1, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmSetParameterValue(channel, (int)parameter, newValue);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2 = ___newValue1;
+		bool L_3;
+		L_3 = Native_HelmSetParameterValue_m8BB134990B0FF0A8511A48D305A481A02D6AA01D(L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Single AudioHelm.HelmController::GetParameterPercent(AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmController_GetParameterPercent_mE9597AE533196AD484EB399C3BE3338CEE4D184F (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, const RuntimeMethod* method) 
+{
+	{
+		// return Native.HelmGetParameterPercent(channel, (int)parameter);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2;
+		L_2 = Native_HelmGetParameterPercent_mB1BA072AB3C96F7B39EF5ADD5C53F7B27013B17F(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Void AudioHelm.HelmController::SetParameterPercent(AudioHelm.Param,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterPercent_m62BC80539DAA76302C9974805377BDB316BADD87 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, float ___newPercent1, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmSetParameterPercent(channel, (int)parameter, newPercent);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2 = ___newPercent1;
+		bool L_3;
+		L_3 = Native_HelmSetParameterPercent_m54709B57A561208508AE9C73A53C38D01F4A635B(L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Single AudioHelm.HelmController::GetParameterPercent(AudioHelm.CommonParam)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmController_GetParameterPercent_m8D97AEF9F1DF6226DE3B3D259BCD2C195AAB7D32 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, const RuntimeMethod* method) 
+{
+	{
+		// return Native.HelmGetParameterPercent(channel, (int)parameter);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2;
+		L_2 = Native_HelmGetParameterPercent_mB1BA072AB3C96F7B39EF5ADD5C53F7B27013B17F(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Void AudioHelm.HelmController::SetParameterPercent(AudioHelm.CommonParam,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetParameterPercent_mB593151734ED01A5CD72857EABB22CC0C6792D42 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___parameter0, float ___newPercent1, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmSetParameterPercent(channel, (int)parameter, newPercent);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___parameter0;
+		float L_2 = ___newPercent1;
+		bool L_3;
+		L_3 = Native_HelmSetParameterPercent_m54709B57A561208508AE9C73A53C38D01F4A635B(L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::SetPolyphony(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetPolyphony_m339F7BDB4385EC1AD81CC1BE3D7ECAF09E5AFBC6 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___numVoices0, const RuntimeMethod* method) 
+{
+	{
+		// SetParameterValue(Param.kPolyphony, numVoices);
+		int32_t L_0 = ___numVoices0;
+		HelmController_SetParameterValue_mBEBFDEC33132F2C6CB821ABE7A2D3AFE0A8A1A32(__this, ((int32_t)82), ((float)L_0), NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::AllNotesOff()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_AllNotesOff_m2EC92BD01883DB7D806555210EF985A61C33A2B0 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Clear_mDAB073697D28935E30C9068F1FFD50963C95C03E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Native.HelmAllNotesOff(channel);
+		int32_t L_0 = __this->___channel_6;
+		Native_HelmAllNotesOff_m92FA84FD6CB2E32044534A980BACC69D7371AECF(L_0, NULL);
+		// pressedNotes.Clear();
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->___pressedNotes_24;
+		NullCheck(L_1);
+		Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0(L_1, Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0_RuntimeMethod_var);
+		// pressedFrequencies.Clear();
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_2 = __this->___pressedFrequencies_25;
+		NullCheck(L_2);
+		Dictionary_2_Clear_mDAB073697D28935E30C9068F1FFD50963C95C03E(L_2, Dictionary_2_Clear_mDAB073697D28935E30C9068F1FFD50963C95C03E_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Boolean AudioHelm.HelmController::IsNoteOn(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HelmController_IsNoteOn_mA5B0BFCAF2FB94ADF3D5C769415AE9ABDB61DCB1 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m050AC0D9D6F681C25C12FBBC7DD71F926D206ED9_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return pressedNotes.ContainsKey(note);
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_0 = __this->___pressedNotes_24;
+		int32_t L_1 = ___note0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_m050AC0D9D6F681C25C12FBBC7DD71F926D206ED9(L_0, L_1, Dictionary_2_ContainsKey_m050AC0D9D6F681C25C12FBBC7DD71F926D206ED9_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.Boolean AudioHelm.HelmController::IsFrequencyOn(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HelmController_IsFrequencyOn_mADFB0C1BDE108EC53C21DFF3B1755C8812EB1EF6 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m7F9E8F6BBCE7C08FEAC01058D3F1568B4C0D3D47_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return pressedFrequencies.ContainsKey(frequency);
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_0 = __this->___pressedFrequencies_25;
+		float L_1 = ___frequency0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_m7F9E8F6BBCE7C08FEAC01058D3F1568B4C0D3D47(L_0, L_1, Dictionary_2_ContainsKey_m7F9E8F6BBCE7C08FEAC01058D3F1568B4C0D3D47_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> AudioHelm.HelmController::GetPressedNotes()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* HelmController_GetPressedNotes_m774509EC05F16B5B6023934C980D362DFBEAC15A (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	{
+		// return pressedNotes;
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_0 = __this->___pressedNotes_24;
+		return L_0;
+	}
+}
+// System.Void AudioHelm.HelmController::NoteOn(System.Int32,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_NoteOn_m56FBFC47A6BFB72DB3EB15DDFAA50E5F128FCB5B (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, float ___velocity1, float ___length2, const RuntimeMethod* method) 
+{
+	{
+		// NoteOn(note, velocity);
+		int32_t L_0 = ___note0;
+		float L_1 = ___velocity1;
+		HelmController_NoteOn_m230A01C1D6CFE56AB30249C275BBBA076595FB29(__this, L_0, L_1, NULL);
+		// StartCoroutine(WaitNoteOff(note, length));
+		int32_t L_2 = ___note0;
+		float L_3 = ___length2;
+		RuntimeObject* L_4;
+		L_4 = HelmController_WaitNoteOff_m9AF308CAF05F52337510FA805456F9B59102D778(__this, L_2, L_3, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
+		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::NoteOn(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_NoteOn_m230A01C1D6CFE56AB30249C275BBBA076595FB29 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, float ___velocity1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int number = 0;
+		V_0 = 0;
+		// pressedNotes.TryGetValue(note, out number);
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_0 = __this->___pressedNotes_24;
+		int32_t L_1 = ___note0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9_RuntimeMethod_var);
+		// pressedNotes[note] = number + 1;
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_3 = __this->___pressedNotes_24;
+		int32_t L_4 = ___note0;
+		int32_t L_5 = V_0;
+		NullCheck(L_3);
+		Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF(L_3, L_4, ((int32_t)il2cpp_codegen_add(L_5, 1)), Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
+		// Native.HelmNoteOn(channel, note, velocity);
+		int32_t L_6 = __this->___channel_6;
+		int32_t L_7 = ___note0;
+		float L_8 = ___velocity1;
+		Native_HelmNoteOn_m6E49B7301ACFE7752E51184CD7CCDE08C90BEE6B(L_6, L_7, L_8, NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator AudioHelm.HelmController::WaitNoteOff(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HelmController_WaitNoteOff_m9AF308CAF05F52337510FA805456F9B59102D778 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, float ___length1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* L_0 = (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32*)il2cpp_codegen_object_new(U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CWaitNoteOffU3Ed__48__ctor_m0D8678625E2CA62EDA71169D3BD1A2882290B301(L_0, 0, NULL);
+		U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
+		U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* L_2 = L_1;
+		int32_t L_3 = ___note0;
+		NullCheck(L_2);
+		L_2->___note_4 = L_3;
+		U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* L_4 = L_2;
+		float L_5 = ___length1;
+		NullCheck(L_4);
+		L_4->___length_2 = L_5;
+		return L_4;
+	}
+}
+// System.Void AudioHelm.HelmController::NoteOff(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_NoteOff_m1D24440F1914414040EAE6F0C43D24000FD549B5 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m6862124076457E217895F9A6113FEA9756F8CCC5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int number = 0;
+		V_0 = 0;
+		// pressedNotes.TryGetValue(note, out number);
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_0 = __this->___pressedNotes_24;
+		int32_t L_1 = ___note0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mAAEB730BB484D3ECA345BF704F67084E465FFBF9_RuntimeMethod_var);
+		// if (number <= 1)
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) > ((int32_t)1)))
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// pressedNotes.Remove(note);
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_4 = __this->___pressedNotes_24;
+		int32_t L_5 = ___note0;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = Dictionary_2_Remove_m6862124076457E217895F9A6113FEA9756F8CCC5(L_4, L_5, Dictionary_2_Remove_m6862124076457E217895F9A6113FEA9756F8CCC5_RuntimeMethod_var);
+		// Native.HelmNoteOff(channel, note);
+		int32_t L_7 = __this->___channel_6;
+		int32_t L_8 = ___note0;
+		Native_HelmNoteOff_m5A7D1140B1D55AF9527B0C6FBFD4A1155AD6410F(L_7, L_8, NULL);
+		return;
+	}
+
+IL_002f:
+	{
+		// pressedNotes[note] = number - 1;
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_9 = __this->___pressedNotes_24;
+		int32_t L_10 = ___note0;
+		int32_t L_11 = V_0;
+		NullCheck(L_9);
+		Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF(L_9, L_10, ((int32_t)il2cpp_codegen_subtract(L_11, 1)), Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::FrequencyOn(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_FrequencyOn_mFFA1EB5DC949CE25648D25F3A575193F50081127 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, float ___velocity1, float ___length2, const RuntimeMethod* method) 
+{
+	{
+		// FrequencyOn(frequency, velocity);
+		float L_0 = ___frequency0;
+		float L_1 = ___velocity1;
+		HelmController_FrequencyOn_mFC57E128394137BC3F4CD99EC451FF1C98F4E0B5(__this, L_0, L_1, NULL);
+		// StartCoroutine(WaitFrequencyOff(frequency, length));
+		float L_2 = ___frequency0;
+		float L_3 = ___length2;
+		RuntimeObject* L_4;
+		L_4 = HelmController_WaitFrequencyOff_m42B9A64BCC3261F5FEEDE9B0046221DABB95A6FC(__this, L_2, L_3, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
+		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::FrequencyOn(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_FrequencyOn_mFC57E128394137BC3F4CD99EC451FF1C98F4E0B5 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, float ___velocity1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int number = 0;
+		V_0 = 0;
+		// pressedFrequencies.TryGetValue(frequency, out number);
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_0 = __this->___pressedFrequencies_25;
+		float L_1 = ___frequency0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E_RuntimeMethod_var);
+		// pressedFrequencies[frequency] = number + 1;
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_3 = __this->___pressedFrequencies_25;
+		float L_4 = ___frequency0;
+		int32_t L_5 = V_0;
+		NullCheck(L_3);
+		Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF(L_3, L_4, ((int32_t)il2cpp_codegen_add(L_5, 1)), Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF_RuntimeMethod_var);
+		// Native.HelmFrequencyOn(channel, frequency, velocity);
+		int32_t L_6 = __this->___channel_6;
+		float L_7 = ___frequency0;
+		float L_8 = ___velocity1;
+		Native_HelmFrequencyOn_m39F1ECDA125F8AA11A73637F54BFAA8C0C2D4BD6(L_6, L_7, L_8, NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator AudioHelm.HelmController::WaitFrequencyOff(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HelmController_WaitFrequencyOff_m42B9A64BCC3261F5FEEDE9B0046221DABB95A6FC (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, float ___length1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* L_0 = (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433*)il2cpp_codegen_object_new(U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CWaitFrequencyOffU3Ed__52__ctor_mF1F8C7665CF5EBD64323A3FA040AC613857E672A(L_0, 0, NULL);
+		U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
+		U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* L_2 = L_1;
+		float L_3 = ___frequency0;
+		NullCheck(L_2);
+		L_2->___frequency_4 = L_3;
+		U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* L_4 = L_2;
+		float L_5 = ___length1;
+		NullCheck(L_4);
+		L_4->___length_2 = L_5;
+		return L_4;
+	}
+}
+// System.Void AudioHelm.HelmController::FrequencyOff(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_FrequencyOff_mA8363BB5775FF1B9C1DADE0EAC8D177B1874632D (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___frequency0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m8B4BFCF9D864D194958456A4442F27FA218C1503_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int number = 0;
+		V_0 = 0;
+		// pressedFrequencies.TryGetValue(frequency, out number);
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_0 = __this->___pressedFrequencies_25;
+		float L_1 = ___frequency0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_m67FC4CC2CED453DFBF5957CBCE17D36B94B6F39E_RuntimeMethod_var);
+		// if (number <= 1)
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) > ((int32_t)1)))
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// pressedFrequencies.Remove(frequency);
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_4 = __this->___pressedFrequencies_25;
+		float L_5 = ___frequency0;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = Dictionary_2_Remove_m8B4BFCF9D864D194958456A4442F27FA218C1503(L_4, L_5, Dictionary_2_Remove_m8B4BFCF9D864D194958456A4442F27FA218C1503_RuntimeMethod_var);
+		// Native.HelmFrequencyOff(channel, frequency);
+		int32_t L_7 = __this->___channel_6;
+		float L_8 = ___frequency0;
+		Native_HelmFrequencyOff_m2BEE8BB272921E67895D46C2852A9F5802F703D1(L_7, L_8, NULL);
+		return;
+	}
+
+IL_002f:
+	{
+		// pressedFrequencies[frequency] = number - 1;
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_9 = __this->___pressedFrequencies_25;
+		float L_10 = ___frequency0;
+		int32_t L_11 = V_0;
+		NullCheck(L_9);
+		Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF(L_9, L_10, ((int32_t)il2cpp_codegen_subtract(L_11, 1)), Dictionary_2_set_Item_m0DB627E811A137D6906F0B210B546FF1E9A9E4BF_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::SetPitchWheel(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetPitchWheel_mAE06D1C6CD3EEA26A1C40786AB75A09DDEB7BDE8 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___wheelValue0, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmSetPitchWheel(channel, wheelValue);
+		int32_t L_0 = __this->___channel_6;
+		float L_1 = ___wheelValue0;
+		Native_HelmSetPitchWheel_mD7EF4F7F16AF83E4B0753C1AB5FDF863AA8A4ED3(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::SetModWheel(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetModWheel_m39A3029837A054BF1161E6A2F4D39F53B6608535 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, float ___wheelValue0, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmSetModWheel(channel, wheelValue);
+		int32_t L_0 = __this->___channel_6;
+		float L_1 = ___wheelValue0;
+		Native_HelmSetModWheel_m52292DD4D5F67BD88ECE05785F419331D0513E3D(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::SetAftertouch(System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_SetAftertouch_m207F082B7A3A5FEAD3422B3E3AE0309C6C74CC3C (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, int32_t ___note0, float ___aftertouchValue1, const RuntimeMethod* method) 
+{
+	{
+		// Native.HelmSetAftertouch(channel, note, aftertouchValue);
+		int32_t L_0 = __this->___channel_6;
+		int32_t L_1 = ___note0;
+		float L_2 = ___aftertouchValue1;
+		Native_HelmSetAftertouch_mADE51E1EC51FED7AED24667D496EDB52A0008F0C(L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::FixedUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController_FixedUpdate_mC95A96DDFFEB7450F0634DFB051CDDFEC3B795F7 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (Time.timeSinceLevelLoad > UPDATE_WAIT)
+		float L_0;
+		L_0 = Time_get_timeSinceLevelLoad_m0AA090B0D9CF98F4A7E8AE81ABE29459DBE28C9A(NULL);
+		if ((!(((float)L_0) > ((float)(0.0399999991f)))))
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// UpdateAllParameters();
+		HelmController_UpdateAllParameters_m5A6CA95A9A3AE64F0E9D3FF4D44885F7341B7BC8(__this, NULL);
+	}
+
+IL_0012:
+	{
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmController__ctor_m2BC88C8B2678E90862D8288CF5AC8293E5EBFF86 (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m8CD500CBD91BCD8B5A2B16474BDEE648E67B231F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m823EDBB00B44A22E7730C64454920F4D657BDF98_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public List<HelmParameter> synthParameters = new List<HelmParameter>();
+		List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E* L_0 = (List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E*)il2cpp_codegen_object_new(List_1_t40ACD6568480421FA05F1980ED2D4BA9EA1A619E_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m823EDBB00B44A22E7730C64454920F4D657BDF98(L_0, List_1__ctor_m823EDBB00B44A22E7730C64454920F4D657BDF98_RuntimeMethod_var);
+		__this->___synthParameters_23 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___synthParameters_23), (void*)L_0);
+		// Dictionary<int, int> pressedNotes = new Dictionary<int, int>();
+		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)il2cpp_codegen_object_new(Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F(L_1, Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F_RuntimeMethod_var);
+		__this->___pressedNotes_24 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___pressedNotes_24), (void*)L_1);
+		// Dictionary<float, int> pressedFrequencies = new Dictionary<float, int>();
+		Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155* L_2 = (Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155*)il2cpp_codegen_object_new(Dictionary_2_t72CA64D07B0F6A0E5D97B0D6C8CD64A683AAC155_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Dictionary_2__ctor_m8CD500CBD91BCD8B5A2B16474BDEE648E67B231F(L_2, Dictionary_2__ctor_m8CD500CBD91BCD8B5A2B16474BDEE648E67B231F_RuntimeMethod_var);
+		__this->___pressedFrequencies_25 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___pressedFrequencies_25), (void*)L_2);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void AudioHelm.HelmController/<WaitNoteOff>d__48::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitNoteOffU3Ed__48__ctor_m0D8678625E2CA62EDA71169D3BD1A2882290B301 (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController/<WaitNoteOff>d__48::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitNoteOffU3Ed__48_System_IDisposable_Dispose_m975FCFAD010C1FD7129E1FF9F7539813561F89F1 (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean AudioHelm.HelmController/<WaitNoteOff>d__48::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWaitNoteOffU3Ed__48_MoveNext_m97FF0391AEB5B16130E246B842C1401C3CEE6080 (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_1 = __this->___U3CU3E4__this_3;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// yield return new WaitForSeconds(length);
+		float L_4 = __this->___length_2;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, L_4, NULL);
+		__this->___U3CU3E2__current_1 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_5);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0038:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// NoteOff(note);
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_6 = V_1;
+		int32_t L_7 = __this->___note_4;
+		NullCheck(L_6);
+		HelmController_NoteOff_m1D24440F1914414040EAE6F0C43D24000FD549B5(L_6, L_7, NULL);
+		// }
+		return (bool)0;
+	}
+}
+// System.Object AudioHelm.HelmController/<WaitNoteOff>d__48::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitNoteOffU3Ed__48_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m70E7B5D324D4D7526DD67B9672BB923FEF06414F (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void AudioHelm.HelmController/<WaitNoteOff>d__48::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitNoteOffU3Ed__48_System_Collections_IEnumerator_Reset_m62394481B8C11DECAD5CBB92426EBABDDA2533B3 (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CWaitNoteOffU3Ed__48_System_Collections_IEnumerator_Reset_m62394481B8C11DECAD5CBB92426EBABDDA2533B3_RuntimeMethod_var)));
+	}
+}
+// System.Object AudioHelm.HelmController/<WaitNoteOff>d__48::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitNoteOffU3Ed__48_System_Collections_IEnumerator_get_Current_m1B4021B2A38FF9232FF1B04B47CCA6A98E5AD6B9 (U3CWaitNoteOffU3Ed__48_t735CDC063808F34C02A7915BCEE35037469DCB32* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void AudioHelm.HelmController/<WaitFrequencyOff>d__52::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitFrequencyOffU3Ed__52__ctor_mF1F8C7665CF5EBD64323A3FA040AC613857E672A (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void AudioHelm.HelmController/<WaitFrequencyOff>d__52::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitFrequencyOffU3Ed__52_System_IDisposable_Dispose_mBFF0F559AB6F37B173CF8E82F61297D9C2F9C313 (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean AudioHelm.HelmController/<WaitFrequencyOff>d__52::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWaitFrequencyOffU3Ed__52_MoveNext_mD7292430C6C33C77AC8C38C9F30B82D8F6C13F87 (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_1 = __this->___U3CU3E4__this_3;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// yield return new WaitForSeconds(length);
+		float L_4 = __this->___length_2;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, L_4, NULL);
+		__this->___U3CU3E2__current_1 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_5);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0038:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// FrequencyOff(frequency);
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_6 = V_1;
+		float L_7 = __this->___frequency_4;
+		NullCheck(L_6);
+		HelmController_FrequencyOff_mA8363BB5775FF1B9C1DADE0EAC8D177B1874632D(L_6, L_7, NULL);
+		// }
+		return (bool)0;
+	}
+}
+// System.Object AudioHelm.HelmController/<WaitFrequencyOff>d__52::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitFrequencyOffU3Ed__52_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m72487487A4545BCFBE691BBF6744169F17EE621F (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void AudioHelm.HelmController/<WaitFrequencyOff>d__52::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitFrequencyOffU3Ed__52_System_Collections_IEnumerator_Reset_mF9CC79B03F45BFFD37319CF6E868BB530608A0B8 (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CWaitFrequencyOffU3Ed__52_System_Collections_IEnumerator_Reset_mF9CC79B03F45BFFD37319CF6E868BB530608A0B8_RuntimeMethod_var)));
+	}
+}
+// System.Object AudioHelm.HelmController/<WaitFrequencyOff>d__52::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitFrequencyOffU3Ed__52_System_Collections_IEnumerator_get_Current_m6E975A7D728009B68A0B1E335FE130829AC69887 (U3CWaitFrequencyOffU3Ed__52_tD27C9901C6E46F4DFA8494836E3DEE151160D433* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// AudioHelm.Param AudioHelm.HelmParameter::get_parameter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return parameter_;
+		int32_t L_0 = __this->___parameter__0;
+		return L_0;
+	}
+}
+// System.Void AudioHelm.HelmParameter::set_parameter(AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_set_parameter_m91BBD895633C82B3223AC63145E78DFEF9D25AEB (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// if (parameter_ == value)
+		int32_t L_0 = __this->___parameter__0;
+		int32_t L_1 = ___value0;
+		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000a:
+	{
+		// parameter_ = value;
+		int32_t L_2 = ___value0;
+		__this->___parameter__0 = L_2;
+		// UpdateMinMax();
+		HelmParameter_UpdateMinMax_m9D2347642A01C92E657D7F4887B07B4F29A0ACB8(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Single AudioHelm.HelmParameter::get_paramValue()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmParameter_get_paramValue_m7C45580002EE8F2BED7D16A0CF5F7A596B4D823D (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return paramValue_;
+		float L_0 = __this->___paramValue__6;
+		return L_0;
+	}
+}
+// System.Void AudioHelm.HelmParameter::set_paramValue(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_set_paramValue_mF5C4CFA2DCE8ADFF09E513ED09C20722F73424B6 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, float ___value0, const RuntimeMethod* method) 
+{
+	{
+		// if (paramValue_ == value)
+		float L_0 = __this->___paramValue__6;
+		float L_1 = ___value0;
+		if ((!(((float)L_0) == ((float)L_1))))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000a:
+	{
+		// paramValue_ = value;
+		float L_2 = ___value0;
+		__this->___paramValue__6 = L_2;
+		// UpdateNative();
+		HelmParameter_UpdateNative_mC910B8C81B83868DE5024CFF20E1DD4474CC856A(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmParameter::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter__ctor_mEF02B794C447DDADC9E9BB97824391CB5CE61E50 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	{
+		// public ScaleType scaleType = ScaleType.kByPercent;
+		__this->___scaleType_1 = 1;
+		// float lastValue = -1.0f;
+		__this->___lastValue_3 = (-1.0f);
+		// float maximumRange = 1.0f;
+		__this->___maximumRange_5 = (1.0f);
+		// public HelmParameter()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// parent = null;
+		__this->___parent_2 = (HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___parent_2), (void*)(HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6*)NULL);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmParameter::.ctor(AudioHelm.HelmController)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter__ctor_m5B0440CF3D306B6FB55A2CB497BEB67AD3A92B07 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* ___par0, const RuntimeMethod* method) 
+{
+	{
+		// public ScaleType scaleType = ScaleType.kByPercent;
+		__this->___scaleType_1 = 1;
+		// float lastValue = -1.0f;
+		__this->___lastValue_3 = (-1.0f);
+		// float maximumRange = 1.0f;
+		__this->___maximumRange_5 = (1.0f);
+		// public HelmParameter(HelmController par)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// parent = par;
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_0 = ___par0;
+		__this->___parent_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___parent_2), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmParameter::.ctor(AudioHelm.HelmController,AudioHelm.Param)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter__ctor_mD02764D540ED5AD74810E11134C3DA28D3EB3BE9 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* ___par0, int32_t ___param1, const RuntimeMethod* method) 
+{
+	{
+		// public ScaleType scaleType = ScaleType.kByPercent;
+		__this->___scaleType_1 = 1;
+		// float lastValue = -1.0f;
+		__this->___lastValue_3 = (-1.0f);
+		// float maximumRange = 1.0f;
+		__this->___maximumRange_5 = (1.0f);
+		// public HelmParameter(HelmController par, Param param)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// parent = par;
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_0 = ___par0;
+		__this->___parent_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___parent_2), (void*)L_0);
+		// parameter = param;
+		int32_t L_1 = ___param1;
+		HelmParameter_set_parameter_m91BBD895633C82B3223AC63145E78DFEF9D25AEB(__this, L_1, NULL);
+		// if (scaleType == ScaleType.kByPercent)
+		int32_t L_2 = __this->___scaleType_1;
+		if ((!(((uint32_t)L_2) == ((uint32_t)1))))
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		// paramValue_ = parent.GetParameterPercent(parameter);
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_3 = __this->___parent_2;
+		int32_t L_4;
+		L_4 = HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F_inline(__this, NULL);
+		NullCheck(L_3);
+		float L_5;
+		L_5 = HelmController_GetParameterPercent_mE9597AE533196AD484EB399C3BE3338CEE4D184F(L_3, L_4, NULL);
+		__this->___paramValue__6 = L_5;
+		return;
+	}
+
+IL_0052:
+	{
+		// paramValue_ = parent.GetParameterValue(parameter);
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_6 = __this->___parent_2;
+		int32_t L_7;
+		L_7 = HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F_inline(__this, NULL);
+		NullCheck(L_6);
+		float L_8;
+		L_8 = HelmController_GetParameterValue_mE0DEFA47C1758C6548223361284DCFE1C2150CD6(L_6, L_7, NULL);
+		__this->___paramValue__6 = L_8;
+		// }
+		return;
+	}
+}
+// System.Single AudioHelm.HelmParameter::GetMinimumRange()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmParameter_GetMinimumRange_m5881C59BF3FB5CCEC585E147DD6F40F595438401 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return minimumRange;
+		float L_0 = __this->___minimumRange_4;
+		return L_0;
+	}
+}
+// System.Single AudioHelm.HelmParameter::GetMaximumRange()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HelmParameter_GetMaximumRange_m7F0E4AE08BD696B1BD6A017CD43DBF34665E4C1E (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return maximumRange;
+		float L_0 = __this->___maximumRange_5;
+		return L_0;
+	}
+}
+// System.Void AudioHelm.HelmParameter::UpdateMinMax()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_UpdateMinMax_m9D2347642A01C92E657D7F4887B07B4F29A0ACB8 (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (parent && parameter_ != Param.kNone)
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_0 = __this->___parent_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Implicit_m18E1885C296CC868AC918101523697CFE6413C79(L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		int32_t L_2 = __this->___parameter__0;
+		if (!L_2)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		// minimumRange = Native.HelmGetParameterMinimum((int)parameter_);
+		int32_t L_3 = __this->___parameter__0;
+		float L_4;
+		L_4 = Native_HelmGetParameterMinimum_mB5E9A68FC015491B8FA47597B140080EFD16F9CB(L_3, NULL);
+		__this->___minimumRange_4 = L_4;
+		// maximumRange = Native.HelmGetParameterMaximum((int)parameter_);
+		int32_t L_5 = __this->___parameter__0;
+		float L_6;
+		L_6 = Native_HelmGetParameterMaximum_m278AE3AABBF25939C92FBB22A3DEE816182A9644(L_5, NULL);
+		__this->___maximumRange_5 = L_6;
+	}
+
+IL_0037:
+	{
+		// }
+		return;
+	}
+}
+// System.Void AudioHelm.HelmParameter::UpdateNative()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HelmParameter_UpdateNative_mC910B8C81B83868DE5024CFF20E1DD4474CC856A (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		// if (parent && parameter_ != Param.kNone && lastValue != paramValue_)
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_0 = __this->___parent_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Implicit_m18E1885C296CC868AC918101523697CFE6413C79(L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		int32_t L_2 = __this->___parameter__0;
+		if (!L_2)
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		float L_3 = __this->___lastValue_3;
+		float L_4 = __this->___paramValue__6;
+		if ((((float)L_3) == ((float)L_4)))
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		// if (scaleType == ScaleType.kByPercent)
+		int32_t L_5 = __this->___scaleType_1;
+		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		// float val = Mathf.Clamp(paramValue_, 0.0f, 1.0f);
+		float L_6 = __this->___paramValue__6;
+		float L_7;
+		L_7 = Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline(L_6, (0.0f), (1.0f), NULL);
+		V_0 = L_7;
+		// parent.SetParameterPercent(parameter, val);
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_8 = __this->___parent_2;
+		int32_t L_9;
+		L_9 = HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F_inline(__this, NULL);
+		float L_10 = V_0;
+		NullCheck(L_8);
+		HelmController_SetParameterPercent_m62BC80539DAA76302C9974805377BDB316BADD87(L_8, L_9, L_10, NULL);
+		goto IL_0080;
+	}
+
+IL_0056:
+	{
+		// float val = Mathf.Clamp(paramValue_, minimumRange, maximumRange);
+		float L_11 = __this->___paramValue__6;
+		float L_12 = __this->___minimumRange_4;
+		float L_13 = __this->___maximumRange_5;
+		float L_14;
+		L_14 = Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline(L_11, L_12, L_13, NULL);
+		V_1 = L_14;
+		// parent.SetParameterValue(parameter, val);
+		HelmController_tEF716F9A472F073C3241DE7B74DE1861DDBF1DC6* L_15 = __this->___parent_2;
+		int32_t L_16;
+		L_16 = HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F_inline(__this, NULL);
+		float L_17 = V_1;
+		NullCheck(L_15);
+		HelmController_SetParameterValue_mBEBFDEC33132F2C6CB821ABE7A2D3AFE0A8A1A32(L_15, L_16, L_17, NULL);
+	}
+
+IL_0080:
+	{
+		// lastValue = paramValue_;
+		float L_18 = __this->___paramValue__6;
+		__this->___lastValue_3 = L_18;
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
 #endif
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -13088,6 +16002,72 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utils__cctor_m80E41E8A313429C54B8FE7AF1E
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HelmParameter_get_parameter_mCA7CFB415544ABE7B474E733161B4DF3F7D19D2F_inline (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return parameter_;
+		int32_t L_0 = __this->___parameter__0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float HelmParameter_get_paramValue_m7C45580002EE8F2BED7D16A0CF5F7A596B4D823D_inline (HelmParameter_t02C01F05F5E5645ACCA060FB9F833E67577810D1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return paramValue_;
+		float L_0 = __this->___paramValue__6;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___value0;
+		float L_1 = ___min1;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___min1;
+		___value0 = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___value0;
+		float L_5 = ___max2;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___max2;
+		___value0 = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___value0;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13444,11 +16424,41 @@ IL_0009:
 		return L_1;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___item0, const RuntimeMethod* method) 
 {
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
+	int32_t V_1 = 0;
 	{
-		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
-		return L_0;
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = V_0;
+		int32_t L_7 = V_1;
+		float L_8 = ___item0;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (float)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		float L_9 = ___item0;
+		((  void (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, float, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
@@ -13493,6 +16503,13 @@ IL_0034:
 		RuntimeObject* L_9 = ___item0;
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
@@ -13585,55 +16602,5 @@ IL_002d:
 	{
 		float L_5 = V_1;
 		return L_5;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	bool V_1 = false;
-	float V_2 = 0.0f;
-	{
-		float L_0 = ___value0;
-		float L_1 = ___min1;
-		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
-		bool L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		float L_3 = ___min1;
-		___value0 = L_3;
-		goto IL_0019;
-	}
-
-IL_000e:
-	{
-		float L_4 = ___value0;
-		float L_5 = ___max2;
-		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
-		bool L_6 = V_1;
-		if (!L_6)
-		{
-			goto IL_0019;
-		}
-	}
-	{
-		float L_7 = ___max2;
-		___value0 = L_7;
-	}
-
-IL_0019:
-	{
-		float L_8 = ___value0;
-		V_2 = L_8;
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		float L_9 = V_2;
-		return L_9;
 	}
 }
