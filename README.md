@@ -1,2 +1,3 @@
-# AR_Project
- 
+# AR Jam
+
+Welcome to AR Jam!
